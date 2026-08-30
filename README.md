@@ -27,7 +27,7 @@ results/        Pre-computed analysis outputs matching all paper tables and appe
 ## Setup
 
 ```bash
-git clone https://github.com/rfirke/survival-llm-reasoning
+git clone https://github.com/rajfirke/survival-llm-reasoning
 cd survival-llm-reasoning
 pip install -r requirements.txt
 ```
