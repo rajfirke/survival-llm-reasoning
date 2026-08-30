@@ -3,7 +3,7 @@
 **EMNLP 2026 Main Conference**  
 Raj Firke (Red Hat) · Rajeswari Kannan (Pimpri Chinchwad College of Engineering)
 
-[Paper](https://aclanthology.org/TBD) | [EMNLP 2026](https://2026.emnlp.org/)
+[EMNLP 2026](https://2026.emnlp.org/)
 
 ## Overview
 
@@ -61,21 +61,25 @@ python scripts/compare_distributions.py
 
 ## Data
 
-`data/survival_data.csv` contains 18,969 reasoning chains with the following columns:
+`data/survival_data.csv` contains 18,969 reasoning chains (one row per chain) with the following columns:
 
-| Column | Description |
-|--------|-------------|
-| `chain_id` | Unique chain identifier |
-| `dataset` | Benchmark (GSM8K, MathQA, BBH, ProofWriter, MMLU-Pro) |
-| `model` | Model name |
-| `step` | Step index (1-indexed) |
-| `correct` | Binary correctness label (1 = correct, 0 = error) |
-| `is_censored` | 1 if chain completed without error (right-censored) |
-| `event_time` | Step of first error (or chain length if censored) |
+| Column | Type | Description |
+|--------|------|-------------|
+| `problem_id` | string | Unique problem identifier from the source benchmark |
+| `dataset` | string | Benchmark (gsm8k, mathqa, bbh_tracking, proofwriter, mmlu_pro) |
+| `model` | string | Model identifier |
+| `n_steps` | int | Total number of reasoning steps in the chain |
+| `duration` | int | Step of first error, or chain length if censored |
+| `event` | int | 1 = error occurred, 0 = chain completed correctly (right-censored) |
+| `first_error_step` | int/null | 0-indexed step of first error, or null if no error |
+| `n_errors` | int | Total number of erroneous steps in the chain |
+| `final_correct` | bool | Whether the final answer was correct |
+| `error_vector` | list[int] | Binary vector of per-step correctness (1=error, 0=correct) |
 
-Labels are programmatic (not LLM-as-judge): math steps verified against reference
-trajectories, logic steps against derivable facts, state-tracking against ground-truth states,
-MMLU-Pro via answer-letter tracking.
+All step-level labels are programmatic (not LLM-as-judge): math steps verified against
+reference trajectories, logic steps against derivable facts, state-tracking against
+ground-truth states, MMLU-Pro via answer-letter tracking. See `data/README.md` for
+full documentation.
 
 ## Pre-computed Results
 
@@ -93,6 +97,15 @@ maps directly to a paper table or appendix section (see `results/` structure abo
   publisher = {Association for Computational Linguistics},
 }
 ```
+
+## Contact
+
+If you use this codebase or build upon this work — whether reproducing our results,
+extending the analysis to new benchmarks or models, or exploring related research
+directions — we would love to hear from you. Please feel free to reach out for
+collaboration, questions about the methodology, or to share what you have built.
+You can open an issue on this repository or contact the authors directly via
+the email addresses listed in the paper.
 
 ## License
 
