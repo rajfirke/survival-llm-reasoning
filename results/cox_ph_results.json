@@ -1,0 +1,183 @@
+{
+  "summary": {
+    "coef": {
+      "log_n_steps": -0.9522417746501655,
+      "model_gemini_2_5_flash": -0.5308260641273586,
+      "model_gemma2_9b": -0.9182241861952285,
+      "model_llama3.2_3b": -0.1759974111422419,
+      "model_llama_3_3_70b": -0.570454866381379,
+      "model_qwen2.5_14b": -0.17773653039009646,
+      "model_qwen2.5_7b": -0.19645662111845583,
+      "ds_gsm8k": -1.984261407839107,
+      "ds_mathqa": -0.03867679929586236,
+      "ds_mmlu_pro": -0.44396611716195317,
+      "ds_proofwriter": -1.533227431940338
+    },
+    "exp(coef)": {
+      "log_n_steps": 0.38587500830003557,
+      "model_gemini_2_5_flash": 0.5881189449991331,
+      "model_gemma2_9b": 0.39922736543907733,
+      "model_llama3.2_3b": 0.8386201544025566,
+      "model_llama_3_3_70b": 0.5652682586853636,
+      "model_qwen2.5_14b": 0.8371629614338438,
+      "model_qwen2.5_7b": 0.8216369722151066,
+      "ds_gsm8k": 0.1374821198426519,
+      "ds_mathqa": 0.9620615978897918,
+      "ds_mmlu_pro": 0.6414871558645067,
+      "ds_proofwriter": 0.21583793972688822
+    },
+    "se(coef)": {
+      "log_n_steps": 0.030887806313431652,
+      "model_gemini_2_5_flash": 0.042094146401980136,
+      "model_gemma2_9b": 0.03445995707502383,
+      "model_llama3.2_3b": 0.031113167801839665,
+      "model_llama_3_3_70b": 0.033997859957634054,
+      "model_qwen2.5_14b": 0.03215849826162402,
+      "model_qwen2.5_7b": 0.03200137253923899,
+      "ds_gsm8k": 0.0341543627729172,
+      "ds_mathqa": 0.026624933726001256,
+      "ds_mmlu_pro": 0.03203911386293134,
+      "ds_proofwriter": 0.03351663609343648
+    },
+    "coef lower 95%": {
+      "log_n_steps": -1.0127807625859404,
+      "model_gemini_2_5_flash": -0.613329075035196,
+      "model_gemma2_9b": -0.9857644609710714,
+      "model_llama3.2_3b": -0.2369780994787989,
+      "model_llama_3_3_70b": -0.6370894474497781,
+      "model_qwen2.5_14b": -0.2407660287797735,
+      "model_qwen2.5_7b": -0.2591781587512133,
+      "ds_gsm8k": -2.0512027287889403,
+      "ds_mathqa": -0.09086071048959066,
+      "ds_mmlu_pro": -0.5067616264298765,
+      "ds_proofwriter": -1.598918831566409
+    },
+    "coef upper 95%": {
+      "log_n_steps": -0.8917027867143905,
+      "model_gemini_2_5_flash": -0.4483230532195212,
+      "model_gemma2_9b": -0.8506839114193856,
+      "model_llama3.2_3b": -0.11501672280568492,
+      "model_llama_3_3_70b": -0.5038202853129798,
+      "model_qwen2.5_14b": -0.11470703200041944,
+      "model_qwen2.5_7b": -0.13373508348569832,
+      "ds_gsm8k": -1.9173200868892737,
+      "ds_mathqa": 0.01350711189786593,
+      "ds_mmlu_pro": -0.3811706078940298,
+      "ds_proofwriter": -1.4675360323142672
+    },
+    "exp(coef) lower 95%": {
+      "log_n_steps": 0.36320757994289715,
+      "model_gemini_2_5_flash": 0.5415450208308765,
+      "model_gemma2_9b": 0.37315385631385006,
+      "model_llama3.2_3b": 0.7890085675272549,
+      "model_llama_3_3_70b": 0.5288293719513893,
+      "model_qwen2.5_14b": 0.7860255122237342,
+      "model_qwen2.5_7b": 0.7716855282660731,
+      "ds_gsm8k": 0.1285801634869581,
+      "ds_mathqa": 0.9131448935466108,
+      "ds_mmlu_pro": 0.6024433599429261,
+      "ds_proofwriter": 0.202114920180263
+    },
+    "exp(coef) upper 95%": {
+      "log_n_steps": 0.4099570885992033,
+      "model_gemini_2_5_flash": 0.6386983171523097,
+      "model_gemma2_9b": 0.42712271793159257,
+      "model_llama3.2_3b": 0.8913512378886483,
+      "model_llama_3_3_70b": 0.6042179599406867,
+      "model_qwen2.5_14b": 0.8916273239197304,
+      "model_qwen2.5_7b": 0.8748217886470994,
+      "ds_gsm8k": 0.1470003829816756,
+      "ds_mathqa": 1.0135987450353243,
+      "ds_mmlu_pro": 0.6830613440209862,
+      "ds_proofwriter": 0.23049271268048158
+    },
+    "cmp to": {
+      "log_n_steps": 0.0,
+      "model_gemini_2_5_flash": 0.0,
+      "model_gemma2_9b": 0.0,
+      "model_llama3.2_3b": 0.0,
+      "model_llama_3_3_70b": 0.0,
+      "model_qwen2.5_14b": 0.0,
+      "model_qwen2.5_7b": 0.0,
+      "ds_gsm8k": 0.0,
+      "ds_mathqa": 0.0,
+      "ds_mmlu_pro": 0.0,
+      "ds_proofwriter": 0.0
+    },
+    "z": {
+      "log_n_steps": -30.829051600083375,
+      "model_gemini_2_5_flash": -12.610448470868343,
+      "model_gemma2_9b": -26.646121009266917,
+      "model_llama3.2_3b": -5.656685692153645,
+      "model_llama_3_3_70b": -16.779140425080964,
+      "model_qwen2.5_14b": -5.52689149052076,
+      "model_qwen2.5_7b": -6.13900609661562,
+      "ds_gsm8k": -58.09686513643676,
+      "ds_mathqa": -1.4526533547045621,
+      "ds_mmlu_pro": -13.857003631914232,
+      "ds_proofwriter": -45.745265952885646
+    },
+    "p": {
+      "log_n_steps": 1.0694984808145338e-208,
+      "model_gemini_2_5_flash": 1.8493764044325755e-36,
+      "model_gemma2_9b": 1.9848704605702925e-156,
+      "model_llama3.2_3b": 1.5432399894708802e-08,
+      "model_llama_3_3_70b": 3.4681989763311126e-63,
+      "model_qwen2.5_14b": 3.259544186015025e-08,
+      "model_qwen2.5_7b": 8.303938079159694e-10,
+      "ds_gsm8k": 0.0,
+      "ds_mathqa": 0.14632002412856582,
+      "ds_mmlu_pro": 1.1539147329000248e-43,
+      "ds_proofwriter": 0.0
+    },
+    "-log2(p)": {
+      "log_n_steps": 690.8641093033651,
+      "model_gemini_2_5_flash": 118.70237252893023,
+      "model_gemma2_9b": 517.2317379471968,
+      "model_llama3.2_3b": 25.94946232603222,
+      "model_llama_3_3_70b": 207.48728330716088,
+      "model_qwen2.5_14b": 24.87075452671399,
+      "model_qwen2.5_7b": 30.165485263032153,
+      "ds_gsm8k": Infinity,
+      "ds_mathqa": 2.7728008767837804,
+      "ds_mmlu_pro": 142.63637145839778,
+      "ds_proofwriter": Infinity
+    }
+  },
+  "concordance": 0.762083674368675,
+  "log_likelihood": -104137.4578306314,
+  "aic": 208296.9156612628,
+  "coefficients": {
+    "log_n_steps": -0.9522417746501655,
+    "model_gemini_2_5_flash": -0.5308260641273586,
+    "model_gemma2_9b": -0.9182241861952285,
+    "model_llama3.2_3b": -0.1759974111422419,
+    "model_llama_3_3_70b": -0.570454866381379,
+    "model_qwen2.5_14b": -0.17773653039009646,
+    "model_qwen2.5_7b": -0.19645662111845583,
+    "ds_gsm8k": -1.984261407839107,
+    "ds_mathqa": -0.03867679929586236,
+    "ds_mmlu_pro": -0.44396611716195317,
+    "ds_proofwriter": -1.533227431940338
+  },
+  "p_values": {
+    "log_n_steps": 1.0694984808145338e-208,
+    "model_gemini_2_5_flash": 1.8493764044325755e-36,
+    "model_gemma2_9b": 1.9848704605702925e-156,
+    "model_llama3.2_3b": 1.5432399894708802e-08,
+    "model_llama_3_3_70b": 3.4681989763311126e-63,
+    "model_qwen2.5_14b": 3.259544186015025e-08,
+    "model_qwen2.5_7b": 8.303938079159694e-10,
+    "ds_gsm8k": 0.0,
+    "ds_mathqa": 0.14632002412856582,
+    "ds_mmlu_pro": 1.1539147329000248e-43,
+    "ds_proofwriter": 0.0
+  },
+  "ph_assumption_test": {
+    "output": "The ``p_value_threshold`` is set at 0.01. Even under the null hypothesis of no violations, some\ncovariates will be below the threshold by chance. This is compounded when there are many covariates.\nSimilarly, when there are lots of observations, even minor deviances from the proportional hazard\nassumption will be flagged.\n\nWith that in mind, it's best to use a combination of statistical tests and visual tests to determine\nthe most serious violations. Produce visual plots using ``check_assumptions(..., show_plots=True)``\nand looking for non-constant lines. See link [A] below for a full example.\n\n<lifelines.StatisticalResult: proportional_hazard_test>\n null_distribution = chi squared\ndegrees_of_freedom = 1\n             model = <lifelines.CoxPHFitter: fitted with 18969 total observations, 7106 right-censored observations>\n         test_name = proportional_hazard_test\n\n---\n                             test_statistic      p  -log2(p)\nds_gsm8k               km            359.95 <0.005    264.23\n                       rank          250.01 <0.005    184.66\nds_mathqa              km           1694.07 <0.005       inf\n                       rank         1937.01 <0.005       inf\nds_mmlu_pro            km            456.75 <0.005    334.22\n                       rank          953.80 <0.005    693.29\nds_proofwriter         km           1912.35 <0.005       inf\n                       rank         2183.07 <0.005       inf\nlog_n_steps            km            976.19 <0.005    709.46\n                       rank          829.59 <0.005    603.60\nmodel_gemini_2_5_flash km            121.19 <0.005     91.22\n                       rank          156.64 <0.005    116.97\nmodel_gemma2_9b        km            544.55 <0.005    397.68\n                       rank          502.33 <0.005    367.17\nmodel_llama3.2_3b      km            241.59 <0.005    178.56\n                       rank          184.89 <0.005    137.47\nmodel_llama_3_3_70b    km             20.49 <0.005     17.35\n                       rank           46.77 <0.005     36.87\nmodel_qwen2.5_14b      km              0.10   0.75      0.42\n                       rank            0.03   0.85      0.23\nmodel_qwen2.5_7b       km              5.56   0.02      5.77\n                       rank            0.21   0.65      0.62\n\n\n1. Variable 'log_n_steps' failed the non-proportional test: p-value is <5e-05.\n\n   Advice 1: the functional form of the variable 'log_n_steps' might be incorrect. That is, there\nmay be non-linear terms missing. The proportional hazard test used is very sensitive to incorrect\nfunctional forms. See documentation in link [D] below on how to specify a functional form.\n\n   Advice 2: try binning the variable 'log_n_steps' using pd.cut, and then specify it in\n`strata=['log_n_steps', ...]` in the call in `.fit`. See documentation in link [B] below.\n\n   Advice 3: try adding an interaction term with your time variable. See documentation in link [C]\nbelow.\n\n\n2. Variable 'model_gemini_2_5_flash' failed the non-proportional test: p-value is <5e-05.\n\n   Advice: with so few unique values (only 2), you can include `strata=['model_gemini_2_5_flash',\n...]` in the call in `.fit`. See documentation in link [E] below.\n\n3. Variable 'model_gemma2_9b' failed the non-proportional test: p-value is <5e-05.\n\n   Advice: with so few unique values (only 2), you can include `strata=['model_gemma2_9b', ...]` in\nthe call in `.fit`. See documentation in link [E] below.\n\n4. Variable 'model_llama3.2_3b' failed the non-proportional test: p-value is <5e-05.\n\n   Advice: with so few unique values (only 2), you can include `strata=['model_llama3.2_3b', ...]`\nin the call in `.fit`. See documentation in link [E] below.\n\n5. Variable 'model_llama_3_3_70b' failed the non-proportional test: p-value is <5e-05.\n\n   Advice: with so few unique values (only 2), you can include `strata=['model_llama_3_3_70b', ...]`\nin the call in `.fit`. See documentation in link [E] below.\n\n6. Variable 'ds_gsm8k' failed the non-proportional test: p-value is <5e-05.\n\n   Advice: with so few unique values (only 2), you can include `strata=['ds_gsm8k', ...]` in the\ncall in `.fit`. See documentation in link [E] below.\n\n7. Variable 'ds_mathqa' failed the non-proportional test: p-value is <5e-05.\n\n   Advice: with so few unique values (only 2), you can include `strata=['ds_mathqa', ...]` in the\ncall in `.fit`. See documentation in link [E] below.\n\n8. Variable 'ds_mmlu_pro' failed the non-proportional test: p-value is <5e-05.\n\n   Advice: with so few unique values (only 2), you can include `strata=['ds_mmlu_pro', ...]` in the\ncall in `.fit`. See documentation in link [E] below.\n\n9. Variable 'ds_proofwriter' failed the non-proportional test: p-value is <5e-05.\n\n   Advice: with so few unique values (only 2), you can include `strata=['ds_proofwriter', ...]` in\nthe call in `.fit`. See documentation in link [E] below.\n\n---\n[A]  https://lifelines.readthedocs.io/en/latest/jupyter_notebooks/Proportional%20hazard%20assumption.html\n[B]  https://lifelines.readthedocs.io/en/latest/jupyter_notebooks/Proportional%20hazard%20assumption.html#Bin-variable-and-stratify-on-it\n[C]  https://lifelines.readthedocs.io/en/latest/jupyter_notebooks/Proportional%20hazard%20assumption.html#Introduce-time-varying-covariates\n[D]  https://lifelines.readthedocs.io/en/latest/jupyter_notebooks/Proportional%20hazard%20assumption.html#Modify-the-functional-form\n[E]  https://lifelines.readthedocs.io/en/latest/jupyter_notebooks/Proportional%20hazard%20assumption.html#Stratification\n\n",
+    "passed": false
+  },
+  "stratified_by_dataset": {
+    "error": "division by zero"
+  }
+}

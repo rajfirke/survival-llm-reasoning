@@ -1,0 +1,816 @@
+{
+  "error_recovery": {
+    "bbh_tracking": {
+      "total_chains": 3342,
+      "chains_with_errors": 2591,
+      "n_recovery_chains": 218,
+      "recovery_rate": 0.0841,
+      "n_cascading_chains": 2043,
+      "cascade_rate": 0.7885,
+      "n_single_error_chains": 526,
+      "single_error_rate": 0.203,
+      "mean_errors_per_chain": 4.6,
+      "mean_recovery_length": 2.55
+    },
+    "gsm8k": {
+      "total_chains": 5412,
+      "chains_with_errors": 1367,
+      "n_recovery_chains": 851,
+      "recovery_rate": 0.6225,
+      "n_cascading_chains": 598,
+      "cascade_rate": 0.4375,
+      "n_single_error_chains": 664,
+      "single_error_rate": 0.4857,
+      "mean_errors_per_chain": 1.98,
+      "mean_recovery_length": 2.31
+    },
+    "mathqa": {
+      "total_chains": 4729,
+      "chains_with_errors": 4494,
+      "n_recovery_chains": 3096,
+      "recovery_rate": 0.6889,
+      "n_cascading_chains": 2447,
+      "cascade_rate": 0.5445,
+      "n_single_error_chains": 1180,
+      "single_error_rate": 0.2626,
+      "mean_errors_per_chain": 2.84,
+      "mean_recovery_length": 2.2
+    },
+    "mmlu_pro": {
+      "total_chains": 2301,
+      "chains_with_errors": 1798,
+      "n_recovery_chains": 780,
+      "recovery_rate": 0.4338,
+      "n_cascading_chains": 1354,
+      "cascade_rate": 0.7531,
+      "n_single_error_chains": 428,
+      "single_error_rate": 0.238,
+      "mean_errors_per_chain": 5.14,
+      "mean_recovery_length": 1.73
+    },
+    "proofwriter": {
+      "total_chains": 3185,
+      "chains_with_errors": 1613,
+      "n_recovery_chains": 139,
+      "recovery_rate": 0.0862,
+      "n_cascading_chains": 159,
+      "cascade_rate": 0.0986,
+      "n_single_error_chains": 1438,
+      "single_error_rate": 0.8915,
+      "mean_errors_per_chain": 1.52,
+      "mean_recovery_length": 1.62
+    }
+  },
+  "first_error_vs_recurrent": {
+    "bbh_tracking": {
+      "recovery_analysis": {
+        "total_chains": 3342,
+        "chains_with_errors": 2591,
+        "n_recovery_chains": 218,
+        "recovery_rate": 0.0841,
+        "n_cascading_chains": 2043,
+        "cascade_rate": 0.7885,
+        "n_single_error_chains": 526,
+        "single_error_rate": 0.203,
+        "mean_errors_per_chain": 4.6,
+        "mean_recovery_length": 2.55
+      },
+      "ag_trajectory": {
+        "dataset": "bbh_tracking",
+        "n_steps_analyzed": 7,
+        "mann_kendall_tau": 0.9048,
+        "mann_kendall_p": 0.002778,
+        "trend": "increasing",
+        "mean_early_hazard": 0.5405,
+        "mean_late_hazard": 0.6663,
+        "late_early_ratio": 1.23,
+        "hazard_trajectory": [
+          {
+            "step": 1,
+            "hazard": 0.5269,
+            "at_risk": 3342
+          },
+          {
+            "step": 2,
+            "hazard": 0.5338,
+            "at_risk": 3342
+          },
+          {
+            "step": 3,
+            "hazard": 0.5607,
+            "at_risk": 3342
+          },
+          {
+            "step": 4,
+            "hazard": 0.5751,
+            "at_risk": 3342
+          },
+          {
+            "step": 5,
+            "hazard": 0.6616,
+            "at_risk": 3342
+          },
+          {
+            "step": 6,
+            "hazard": 0.6429,
+            "at_risk": 1655
+          },
+          {
+            "step": 7,
+            "hazard": 0.7855,
+            "at_risk": 1655
+          }
+        ]
+      },
+      "weibull_rho_first_error": 1.0574,
+      "ag_trend": "increasing",
+      "ag_late_early_ratio": 1.23
+    },
+    "gsm8k": {
+      "recovery_analysis": {
+        "total_chains": 5412,
+        "chains_with_errors": 1367,
+        "n_recovery_chains": 851,
+        "recovery_rate": 0.6225,
+        "n_cascading_chains": 598,
+        "cascade_rate": 0.4375,
+        "n_single_error_chains": 664,
+        "single_error_rate": 0.4857,
+        "mean_errors_per_chain": 1.98,
+        "mean_recovery_length": 2.31
+      },
+      "ag_trajectory": {
+        "dataset": "gsm8k",
+        "n_steps_analyzed": 19,
+        "mann_kendall_tau": -0.5513,
+        "mann_kendall_p": 0.001,
+        "trend": "decreasing",
+        "mean_early_hazard": 0.0841,
+        "mean_late_hazard": 0.0283,
+        "late_early_ratio": 0.34,
+        "hazard_trajectory": [
+          {
+            "step": 1,
+            "hazard": 0.0061,
+            "at_risk": 5412
+          },
+          {
+            "step": 2,
+            "hazard": 0.0924,
+            "at_risk": 5412
+          },
+          {
+            "step": 3,
+            "hazard": 0.1072,
+            "at_risk": 5412
+          },
+          {
+            "step": 4,
+            "hazard": 0.1323,
+            "at_risk": 5412
+          },
+          {
+            "step": 5,
+            "hazard": 0.1197,
+            "at_risk": 3727
+          },
+          {
+            "step": 6,
+            "hazard": 0.0835,
+            "at_risk": 2252
+          },
+          {
+            "step": 7,
+            "hazard": 0.0788,
+            "at_risk": 1319
+          },
+          {
+            "step": 8,
+            "hazard": 0.0612,
+            "at_risk": 850
+          },
+          {
+            "step": 9,
+            "hazard": 0.0758,
+            "at_risk": 541
+          },
+          {
+            "step": 10,
+            "hazard": 0.0457,
+            "at_risk": 416
+          },
+          {
+            "step": 11,
+            "hazard": 0.0582,
+            "at_risk": 292
+          },
+          {
+            "step": 12,
+            "hazard": 0.0182,
+            "at_risk": 220
+          },
+          {
+            "step": 13,
+            "hazard": 0.0417,
+            "at_risk": 144
+          },
+          {
+            "step": 14,
+            "hazard": 0.0,
+            "at_risk": 117
+          },
+          {
+            "step": 15,
+            "hazard": 0.0128,
+            "at_risk": 78
+          },
+          {
+            "step": 16,
+            "hazard": 0.0172,
+            "at_risk": 58
+          },
+          {
+            "step": 17,
+            "hazard": 0.0455,
+            "at_risk": 44
+          },
+          {
+            "step": 18,
+            "hazard": 0.0,
+            "at_risk": 36
+          },
+          {
+            "step": 19,
+            "hazard": 0.0435,
+            "at_risk": 23
+          }
+        ]
+      },
+      "weibull_rho_first_error": 1.4702,
+      "ag_trend": "decreasing",
+      "ag_late_early_ratio": 0.34
+    },
+    "mathqa": {
+      "recovery_analysis": {
+        "total_chains": 4729,
+        "chains_with_errors": 4494,
+        "n_recovery_chains": 3096,
+        "recovery_rate": 0.6889,
+        "n_cascading_chains": 2447,
+        "cascade_rate": 0.5445,
+        "n_single_error_chains": 1180,
+        "single_error_rate": 0.2626,
+        "mean_errors_per_chain": 2.84,
+        "mean_recovery_length": 2.2
+      },
+      "ag_trajectory": {
+        "dataset": "mathqa",
+        "n_steps_analyzed": 36,
+        "mann_kendall_tau": -0.6826,
+        "mann_kendall_p": 0.0,
+        "trend": "decreasing",
+        "mean_early_hazard": 0.2754,
+        "mean_late_hazard": 0.0868,
+        "late_early_ratio": 0.32,
+        "hazard_trajectory": [
+          {
+            "step": 1,
+            "hazard": 0.0408,
+            "at_risk": 4729
+          },
+          {
+            "step": 2,
+            "hazard": 0.3318,
+            "at_risk": 4729
+          },
+          {
+            "step": 3,
+            "hazard": 0.4367,
+            "at_risk": 4729
+          },
+          {
+            "step": 4,
+            "hazard": 0.4633,
+            "at_risk": 4729
+          },
+          {
+            "step": 5,
+            "hazard": 0.4864,
+            "at_risk": 4007
+          },
+          {
+            "step": 6,
+            "hazard": 0.3758,
+            "at_risk": 3177
+          },
+          {
+            "step": 7,
+            "hazard": 0.4112,
+            "at_risk": 2456
+          },
+          {
+            "step": 8,
+            "hazard": 0.2803,
+            "at_risk": 1948
+          },
+          {
+            "step": 9,
+            "hazard": 0.3551,
+            "at_risk": 1563
+          },
+          {
+            "step": 10,
+            "hazard": 0.2148,
+            "at_risk": 1322
+          },
+          {
+            "step": 11,
+            "hazard": 0.2839,
+            "at_risk": 1078
+          },
+          {
+            "step": 12,
+            "hazard": 0.2106,
+            "at_risk": 926
+          },
+          {
+            "step": 13,
+            "hazard": 0.239,
+            "at_risk": 724
+          },
+          {
+            "step": 14,
+            "hazard": 0.178,
+            "at_risk": 618
+          },
+          {
+            "step": 15,
+            "hazard": 0.2069,
+            "at_risk": 493
+          },
+          {
+            "step": 16,
+            "hazard": 0.1599,
+            "at_risk": 419
+          },
+          {
+            "step": 17,
+            "hazard": 0.1841,
+            "at_risk": 353
+          },
+          {
+            "step": 18,
+            "hazard": 0.099,
+            "at_risk": 303
+          },
+          {
+            "step": 19,
+            "hazard": 0.1382,
+            "at_risk": 246
+          },
+          {
+            "step": 20,
+            "hazard": 0.1346,
+            "at_risk": 208
+          },
+          {
+            "step": 21,
+            "hazard": 0.1062,
+            "at_risk": 160
+          },
+          {
+            "step": 22,
+            "hazard": 0.0952,
+            "at_risk": 126
+          },
+          {
+            "step": 23,
+            "hazard": 0.0841,
+            "at_risk": 107
+          },
+          {
+            "step": 24,
+            "hazard": 0.1196,
+            "at_risk": 92
+          },
+          {
+            "step": 25,
+            "hazard": 0.1154,
+            "at_risk": 78
+          },
+          {
+            "step": 26,
+            "hazard": 0.1231,
+            "at_risk": 65
+          },
+          {
+            "step": 27,
+            "hazard": 0.1186,
+            "at_risk": 59
+          },
+          {
+            "step": 28,
+            "hazard": 0.08,
+            "at_risk": 50
+          },
+          {
+            "step": 29,
+            "hazard": 0.1463,
+            "at_risk": 41
+          },
+          {
+            "step": 30,
+            "hazard": 0.0833,
+            "at_risk": 36
+          },
+          {
+            "step": 31,
+            "hazard": 0.0323,
+            "at_risk": 31
+          },
+          {
+            "step": 32,
+            "hazard": 0.1379,
+            "at_risk": 29
+          },
+          {
+            "step": 33,
+            "hazard": 0.0,
+            "at_risk": 25
+          },
+          {
+            "step": 34,
+            "hazard": 0.0,
+            "at_risk": 24
+          },
+          {
+            "step": 35,
+            "hazard": 0.0,
+            "at_risk": 22
+          },
+          {
+            "step": 36,
+            "hazard": 0.0476,
+            "at_risk": 21
+          }
+        ]
+      },
+      "weibull_rho_first_error": 1.549,
+      "ag_trend": "decreasing",
+      "ag_late_early_ratio": 0.32
+    },
+    "mmlu_pro": {
+      "recovery_analysis": {
+        "total_chains": 2301,
+        "chains_with_errors": 1798,
+        "n_recovery_chains": 780,
+        "recovery_rate": 0.4338,
+        "n_cascading_chains": 1354,
+        "cascade_rate": 0.7531,
+        "n_single_error_chains": 428,
+        "single_error_rate": 0.238,
+        "mean_errors_per_chain": 5.14,
+        "mean_recovery_length": 1.73
+      },
+      "ag_trajectory": {
+        "dataset": "mmlu_pro",
+        "n_steps_analyzed": 31,
+        "mann_kendall_tau": 0.4995,
+        "mann_kendall_p": 8e-05,
+        "trend": "increasing",
+        "mean_early_hazard": 0.5575,
+        "mean_late_hazard": 0.6758,
+        "late_early_ratio": 1.21,
+        "hazard_trajectory": [
+          {
+            "step": 1,
+            "hazard": 0.1382,
+            "at_risk": 2301
+          },
+          {
+            "step": 2,
+            "hazard": 0.3585,
+            "at_risk": 2301
+          },
+          {
+            "step": 3,
+            "hazard": 0.4585,
+            "at_risk": 2301
+          },
+          {
+            "step": 4,
+            "hazard": 0.4915,
+            "at_risk": 2301
+          },
+          {
+            "step": 5,
+            "hazard": 0.5272,
+            "at_risk": 1804
+          },
+          {
+            "step": 6,
+            "hazard": 0.5522,
+            "at_risk": 1369
+          },
+          {
+            "step": 7,
+            "hazard": 0.5766,
+            "at_risk": 1096
+          },
+          {
+            "step": 8,
+            "hazard": 0.625,
+            "at_risk": 920
+          },
+          {
+            "step": 9,
+            "hazard": 0.6362,
+            "at_risk": 778
+          },
+          {
+            "step": 10,
+            "hazard": 0.6706,
+            "at_risk": 677
+          },
+          {
+            "step": 11,
+            "hazard": 0.6754,
+            "at_risk": 573
+          },
+          {
+            "step": 12,
+            "hazard": 0.7004,
+            "at_risk": 484
+          },
+          {
+            "step": 13,
+            "hazard": 0.6454,
+            "at_risk": 392
+          },
+          {
+            "step": 14,
+            "hazard": 0.6436,
+            "at_risk": 275
+          },
+          {
+            "step": 15,
+            "hazard": 0.6633,
+            "at_risk": 196
+          },
+          {
+            "step": 16,
+            "hazard": 0.6594,
+            "at_risk": 138
+          },
+          {
+            "step": 17,
+            "hazard": 0.6832,
+            "at_risk": 101
+          },
+          {
+            "step": 18,
+            "hazard": 0.6813,
+            "at_risk": 91
+          },
+          {
+            "step": 19,
+            "hazard": 0.6447,
+            "at_risk": 76
+          },
+          {
+            "step": 20,
+            "hazard": 0.7077,
+            "at_risk": 65
+          },
+          {
+            "step": 21,
+            "hazard": 0.678,
+            "at_risk": 59
+          },
+          {
+            "step": 22,
+            "hazard": 0.6909,
+            "at_risk": 55
+          },
+          {
+            "step": 23,
+            "hazard": 0.7391,
+            "at_risk": 46
+          },
+          {
+            "step": 24,
+            "hazard": 0.6977,
+            "at_risk": 43
+          },
+          {
+            "step": 25,
+            "hazard": 0.6579,
+            "at_risk": 38
+          },
+          {
+            "step": 26,
+            "hazard": 0.6486,
+            "at_risk": 37
+          },
+          {
+            "step": 27,
+            "hazard": 0.7273,
+            "at_risk": 33
+          },
+          {
+            "step": 28,
+            "hazard": 0.6552,
+            "at_risk": 29
+          },
+          {
+            "step": 29,
+            "hazard": 0.5556,
+            "at_risk": 27
+          },
+          {
+            "step": 30,
+            "hazard": 0.625,
+            "at_risk": 24
+          },
+          {
+            "step": 31,
+            "hazard": 0.7619,
+            "at_risk": 21
+          }
+        ]
+      },
+      "weibull_rho_first_error": 1.2693,
+      "ag_trend": "increasing",
+      "ag_late_early_ratio": 1.21
+    },
+    "proofwriter": {
+      "recovery_analysis": {
+        "total_chains": 3185,
+        "chains_with_errors": 1613,
+        "n_recovery_chains": 139,
+        "recovery_rate": 0.0862,
+        "n_cascading_chains": 159,
+        "cascade_rate": 0.0986,
+        "n_single_error_chains": 1438,
+        "single_error_rate": 0.8915,
+        "mean_errors_per_chain": 1.52,
+        "mean_recovery_length": 1.62
+      },
+      "ag_trajectory": {
+        "dataset": "proofwriter",
+        "n_steps_analyzed": 28,
+        "mann_kendall_tau": -0.0899,
+        "mann_kendall_p": 0.517918,
+        "trend": "decreasing",
+        "mean_early_hazard": 0.1306,
+        "mean_late_hazard": 0.1142,
+        "late_early_ratio": 0.87,
+        "hazard_trajectory": [
+          {
+            "step": 1,
+            "hazard": 0.0091,
+            "at_risk": 3185
+          },
+          {
+            "step": 2,
+            "hazard": 0.0336,
+            "at_risk": 3185
+          },
+          {
+            "step": 3,
+            "hazard": 0.0531,
+            "at_risk": 3185
+          },
+          {
+            "step": 4,
+            "hazard": 0.0914,
+            "at_risk": 2942
+          },
+          {
+            "step": 5,
+            "hazard": 0.1164,
+            "at_risk": 2604
+          },
+          {
+            "step": 6,
+            "hazard": 0.1596,
+            "at_risk": 2136
+          },
+          {
+            "step": 7,
+            "hazard": 0.1744,
+            "at_risk": 1663
+          },
+          {
+            "step": 8,
+            "hazard": 0.1871,
+            "at_risk": 1283
+          },
+          {
+            "step": 9,
+            "hazard": 0.1661,
+            "at_risk": 939
+          },
+          {
+            "step": 10,
+            "hazard": 0.1896,
+            "at_risk": 733
+          },
+          {
+            "step": 11,
+            "hazard": 0.1891,
+            "at_risk": 534
+          },
+          {
+            "step": 12,
+            "hazard": 0.162,
+            "at_risk": 389
+          },
+          {
+            "step": 13,
+            "hazard": 0.1433,
+            "at_risk": 300
+          },
+          {
+            "step": 14,
+            "hazard": 0.1538,
+            "at_risk": 247
+          },
+          {
+            "step": 15,
+            "hazard": 0.1493,
+            "at_risk": 201
+          },
+          {
+            "step": 16,
+            "hazard": 0.1436,
+            "at_risk": 181
+          },
+          {
+            "step": 17,
+            "hazard": 0.1039,
+            "at_risk": 154
+          },
+          {
+            "step": 18,
+            "hazard": 0.0963,
+            "at_risk": 135
+          },
+          {
+            "step": 19,
+            "hazard": 0.0965,
+            "at_risk": 114
+          },
+          {
+            "step": 20,
+            "hazard": 0.1327,
+            "at_risk": 98
+          },
+          {
+            "step": 21,
+            "hazard": 0.1205,
+            "at_risk": 83
+          },
+          {
+            "step": 22,
+            "hazard": 0.0857,
+            "at_risk": 70
+          },
+          {
+            "step": 23,
+            "hazard": 0.0625,
+            "at_risk": 64
+          },
+          {
+            "step": 24,
+            "hazard": 0.2167,
+            "at_risk": 60
+          },
+          {
+            "step": 25,
+            "hazard": 0.15,
+            "at_risk": 40
+          },
+          {
+            "step": 26,
+            "hazard": 0.069,
+            "at_risk": 29
+          },
+          {
+            "step": 27,
+            "hazard": 0.125,
+            "at_risk": 24
+          },
+          {
+            "step": 28,
+            "hazard": 0.0476,
+            "at_risk": 21
+          }
+        ]
+      },
+      "weibull_rho_first_error": 1.801,
+      "ag_trend": "decreasing",
+      "ag_late_early_ratio": 0.87
+    }
+  }
+}

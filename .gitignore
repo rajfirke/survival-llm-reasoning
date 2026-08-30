@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Claude Code
+.claude/
+
+# Large files
+*.tgz
+*.zip
+*.tar.gz
+
+# Internal
+EMNLP_SUBMISSION_PLAN.md
+reviews_and_responses_complete.md
+results/temperature_pilot.json
+results/integrity_compliance_report.md
+results/reference_audit.json
+results/reference_verification_table.md
+results/aging_clustering_test.json

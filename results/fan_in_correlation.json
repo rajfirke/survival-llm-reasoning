@@ -1,0 +1,114 @@
+{
+  "fan_in_estimates": {
+    "proofwriter": {
+      "mean_fan_in": 2.5,
+      "justification": "ProofWriter derivation steps depend on COMBINATIONS of prior derived facts (typical rule: 'Since X and Y, conclude Z'). Each step consumes 2-3 prior facts on average, giving fan-in > 1. This is explicit in the proof structure.",
+      "estimation_method": "structural_from_proof_trees",
+      "fan_in_type": "explicit_combinatorial"
+    },
+    "gsm8k": {
+      "mean_fan_in": 1.2,
+      "justification": "GSM8K computation steps are largely sequential: each step uses the result of step N-1 (fan-in = 1). Occasionally a step combines two prior values (e.g., 'total = price + tax'), giving slight fan-in > 1.",
+      "estimation_method": "structural_from_arithmetic_chains",
+      "fan_in_type": "sequential_with_occasional_merge"
+    },
+    "mathqa": {
+      "mean_fan_in": 1.5,
+      "justification": "MathQA operations have explicit operand counts from the program structure. Operations like add(X, Y), multiply(X, Y) have 2 operands, while sqrt(X), negate(X) have 1. Mean across the dataset is ~1.5.",
+      "estimation_method": "structural_from_program_operands",
+      "fan_in_type": "explicit_from_program"
+    },
+    "bbh_tracking": {
+      "mean_fan_in": 3.0,
+      "justification": "Each swap operation requires tracking the state of ALL objects (typically 3-5). The model must recall the current position of EVERY object to determine the effect of a swap, giving high implicit fan-in. However, the operations themselves are structurally simple (pairwise swaps).",
+      "estimation_method": "count_of_tracked_objects",
+      "fan_in_type": "implicit_state_tracking"
+    },
+    "mmlu_pro": {
+      "mean_fan_in": 1.0,
+      "justification": "MMLU-Pro reasoning steps are largely independent: each step states a fact or inference that doesn't combine multiple prior derived conclusions. The steps are closer to a sequence of independent claims leading to an answer.",
+      "estimation_method": "estimated_from_reasoning_structure",
+      "fan_in_type": "independent_claims"
+    }
+  },
+  "empirical_proxies": {
+    "bbh_tracking": {
+      "mean_propagation_rate": 0.936,
+      "mean_error_density": 0.7569,
+      "mean_clustering": 0.9812,
+      "n_chains_analyzed": 2591
+    },
+    "gsm8k": {
+      "mean_propagation_rate": 0.4044,
+      "mean_error_density": 0.3457,
+      "mean_clustering": 0.8736,
+      "n_chains_analyzed": 1367
+    },
+    "mathqa": {
+      "mean_propagation_rate": 0.4868,
+      "mean_error_density": 0.3893,
+      "mean_clustering": 0.7556,
+      "n_chains_analyzed": 4494
+    },
+    "mmlu_pro": {
+      "mean_propagation_rate": 0.7905,
+      "mean_error_density": 0.5608,
+      "mean_clustering": 0.9614,
+      "n_chains_analyzed": 1798
+    },
+    "proofwriter": {
+      "mean_propagation_rate": 0.6822,
+      "mean_error_density": 0.2026,
+      "mean_clustering": 0.8052,
+      "n_chains_analyzed": 1613
+    }
+  },
+  "correlation": {
+    "datasets": [
+      "proofwriter",
+      "gsm8k",
+      "mathqa",
+      "bbh_tracking",
+      "mmlu_pro"
+    ],
+    "fan_in_values": [
+      2.5,
+      1.2,
+      1.5,
+      3.0,
+      1.0
+    ],
+    "mean_rho_values": [
+      2.3571,
+      1.4921,
+      1.6311,
+      1.6758,
+      1.3512
+    ],
+    "spearman": {
+      "rho": 0.9,
+      "p_value": 0.0374,
+      "significant": true
+    },
+    "pearson": {
+      "r": 0.635,
+      "p_value": 0.2497,
+      "significant": false
+    },
+    "n_datapoints": 5,
+    "ranking_fan_in": [
+      "bbh_tracking",
+      "proofwriter",
+      "mathqa",
+      "gsm8k",
+      "mmlu_pro"
+    ],
+    "ranking_rho": [
+      "proofwriter",
+      "bbh_tracking",
+      "mathqa",
+      "gsm8k",
+      "mmlu_pro"
+    ]
+  }
+}

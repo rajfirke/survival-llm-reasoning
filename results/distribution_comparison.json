@@ -1,0 +1,1235 @@
+{
+  "cells": [
+    {
+      "dataset": "bbh_tracking",
+      "model": "claude_haiku_4_5",
+      "n_chains": 500,
+      "n_events": 465,
+      "max_step": 7,
+      "weibull": {
+        "rho": 1.391,
+        "lambda": 1.5126,
+        "aic": 1159.7,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 0.1297,
+        "sigma": 0.4604,
+        "aic": 731.4,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.5238,
+        "hazard_trend_p": 0.136111
+      },
+      "loglogistic": {
+        "alpha": 1.0211,
+        "beta": 7.6786,
+        "aic": 323.2,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.9048,
+        "hazard_trend_p": 0.002778
+      },
+      "best_aic": "LogLogistic",
+      "weibull_delta_aic": 836.5,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "bbh_tracking",
+      "model": "gemini_2_5_flash",
+      "n_chains": 342,
+      "n_events": 323,
+      "max_step": 7,
+      "weibull": {
+        "rho": 1.833,
+        "lambda": 4.5843,
+        "aic": 1446.0,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.1956,
+        "sigma": 0.7423,
+        "aic": 1501.8,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.1429,
+        "hazard_trend_p": 0.772619
+      },
+      "loglogistic": {
+        "alpha": 3.5594,
+        "beta": 2.2528,
+        "aic": 1524.8,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.2381,
+        "hazard_trend_p": 0.561905
+      },
+      "best_aic": "Weibull",
+      "weibull_delta_aic": 0.0,
+      "all_agree_increasing": true,
+      "any_increasing": true
+    },
+    {
+      "dataset": "bbh_tracking",
+      "model": "gemma2_9b",
+      "n_chains": 500,
+      "n_events": 186,
+      "max_step": 7,
+      "weibull": {
+        "rho": 3.7616,
+        "lambda": 7.9547,
+        "aic": 1139.0,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 2.1106,
+        "sigma": 0.6128,
+        "aic": 1245.9,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 1.0,
+        "hazard_trend_p": 0.000397
+      },
+      "loglogistic": {
+        "alpha": 7.5331,
+        "beta": 4.034,
+        "aic": 1169.7,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 1.0,
+        "hazard_trend_p": 0.000397
+      },
+      "best_aic": "Weibull",
+      "weibull_delta_aic": 0.0,
+      "all_agree_increasing": true,
+      "any_increasing": true
+    },
+    {
+      "dataset": "bbh_tracking",
+      "model": "llama3.2_3b",
+      "n_chains": 500,
+      "n_events": 456,
+      "max_step": 7,
+      "weibull": {
+        "rho": 1.664,
+        "lambda": 4.1617,
+        "aic": 2017.9,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.0873,
+        "sigma": 0.7692,
+        "aic": 2046.4,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.1429,
+        "hazard_trend_p": 0.772619
+      },
+      "loglogistic": {
+        "alpha": 3.1079,
+        "beta": 2.1255,
+        "aic": 2085.5,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.1429,
+        "hazard_trend_p": 0.772619
+      },
+      "best_aic": "Weibull",
+      "weibull_delta_aic": 0.0,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "bbh_tracking",
+      "model": "llama_3_3_70b",
+      "n_chains": 500,
+      "n_events": 258,
+      "max_step": 7,
+      "weibull": {
+        "rho": 0.7722,
+        "lambda": 7.2741,
+        "aic": 1452.3,
+        "increasing_hazard": false
+      },
+      "lognormal": {
+        "mu": 1.394,
+        "sigma": 1.5149,
+        "aic": 1361.1,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -1.0,
+        "hazard_trend_p": 0.000397
+      },
+      "loglogistic": {
+        "alpha": 3.7472,
+        "beta": 1.0284,
+        "aic": 1395.9,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -1.0,
+        "hazard_trend_p": 0.000397
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 91.2,
+      "all_agree_increasing": false,
+      "any_increasing": false
+    },
+    {
+      "dataset": "bbh_tracking",
+      "model": "qwen2.5_14b",
+      "n_chains": 500,
+      "n_events": 458,
+      "max_step": 7,
+      "weibull": {
+        "rho": 1.224,
+        "lambda": 1.8065,
+        "aic": 1379.7,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 0.2398,
+        "sigma": 0.6097,
+        "aic": 1059.1,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.7143,
+        "hazard_trend_p": 0.030159
+      },
+      "loglogistic": {
+        "alpha": 1.0814,
+        "beta": 4.1429,
+        "aic": 876.6,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.9048,
+        "hazard_trend_p": 0.002778
+      },
+      "best_aic": "LogLogistic",
+      "weibull_delta_aic": 503.1,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "bbh_tracking",
+      "model": "qwen2.5_7b",
+      "n_chains": 500,
+      "n_events": 445,
+      "max_step": 7,
+      "weibull": {
+        "rho": 1.0845,
+        "lambda": 2.21,
+        "aic": 1574.9,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 0.3747,
+        "sigma": 0.763,
+        "aic": 1321.5,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.9048,
+        "hazard_trend_p": 0.002778
+      },
+      "loglogistic": {
+        "alpha": 1.2046,
+        "beta": 2.7006,
+        "aic": 1246.3,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.9048,
+        "hazard_trend_p": 0.002778
+      },
+      "best_aic": "LogLogistic",
+      "weibull_delta_aic": 328.6,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "gsm8k",
+      "model": "claude_haiku_4_5",
+      "n_chains": 796,
+      "n_events": 462,
+      "max_step": 21,
+      "weibull": {
+        "rho": 1.8539,
+        "lambda": 6.8861,
+        "aic": 2653.4,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.6737,
+        "sigma": 0.6381,
+        "aic": 2558.0,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.2667,
+        "hazard_trend_p": 0.09704
+      },
+      "loglogistic": {
+        "alpha": 5.238,
+        "beta": 2.7255,
+        "aic": 2566.3,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.4286,
+        "hazard_trend_p": 0.006091
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 95.4,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "gsm8k",
+      "model": "gemini_2_5_flash",
+      "n_chains": 752,
+      "n_events": 127,
+      "max_step": 18,
+      "weibull": {
+        "rho": 1.2933,
+        "lambda": 20.3956,
+        "aic": 1112.4,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 2.9811,
+        "sigma": 1.3552,
+        "aic": 1094.6,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.634,
+        "hazard_trend_p": 0.000105
+      },
+      "loglogistic": {
+        "alpha": 16.9222,
+        "beta": 1.3984,
+        "aic": 1107.4,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.0458,
+        "hazard_trend_p": 0.822824
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 17.8,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "gsm8k",
+      "model": "gemma2_9b",
+      "n_chains": 750,
+      "n_events": 132,
+      "max_step": 22,
+      "weibull": {
+        "rho": 1.3065,
+        "lambda": 22.6771,
+        "aic": 1178.7,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 2.958,
+        "sigma": 1.2322,
+        "aic": 1151.0,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.4805,
+        "hazard_trend_p": 0.001376
+      },
+      "loglogistic": {
+        "alpha": 17.9604,
+        "beta": 1.4526,
+        "aic": 1170.3,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.0216,
+        "hazard_trend_p": 0.911288
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 27.7,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "gsm8k",
+      "model": "llama3.2_3b",
+      "n_chains": 882,
+      "n_events": 348,
+      "max_step": 34,
+      "weibull": {
+        "rho": 1.3151,
+        "lambda": 9.9156,
+        "aic": 2385.1,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.9427,
+        "sigma": 0.9408,
+        "aic": 2278.9,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.8111,
+        "hazard_trend_p": 0.0
+      },
+      "loglogistic": {
+        "alpha": 6.7635,
+        "beta": 1.7598,
+        "aic": 2319.8,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.8182,
+        "hazard_trend_p": 0.0
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 106.2,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "gsm8k",
+      "model": "llama_3_3_70b",
+      "n_chains": 708,
+      "n_events": 93,
+      "max_step": 14,
+      "weibull": {
+        "rho": 1.3757,
+        "lambda": 24.7429,
+        "aic": 876.0,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 3.2644,
+        "sigma": 1.3457,
+        "aic": 863.9,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.0989,
+        "hazard_trend_p": 0.667174
+      },
+      "loglogistic": {
+        "alpha": 21.5784,
+        "beta": 1.451,
+        "aic": 873.8,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.9341,
+        "hazard_trend_p": 0.0
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 12.1,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "gsm8k",
+      "model": "qwen2.5_14b",
+      "n_chains": 844,
+      "n_events": 94,
+      "max_step": 20,
+      "weibull": {
+        "rho": 1.5894,
+        "lambda": 23.9589,
+        "aic": 911.3,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 3.209,
+        "sigma": 1.1588,
+        "aic": 898.3,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.1474,
+        "hazard_trend_p": 0.385857
+      },
+      "loglogistic": {
+        "alpha": 20.7972,
+        "beta": 1.7009,
+        "aic": 908.2,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.8842,
+        "hazard_trend_p": 0.0
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 13.0,
+      "all_agree_increasing": true,
+      "any_increasing": true
+    },
+    {
+      "dataset": "gsm8k",
+      "model": "qwen2.5_7b",
+      "n_chains": 680,
+      "n_events": 111,
+      "max_step": 12,
+      "weibull": {
+        "rho": 1.7108,
+        "lambda": 14.7823,
+        "aic": 950.1,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 2.6874,
+        "sigma": 1.0474,
+        "aic": 939.2,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.5455,
+        "hazard_trend_p": 0.013771
+      },
+      "loglogistic": {
+        "alpha": 12.8486,
+        "beta": 1.849,
+        "aic": 947.0,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 1.0,
+        "hazard_trend_p": 0.0
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 10.9,
+      "all_agree_increasing": true,
+      "any_increasing": true
+    },
+    {
+      "dataset": "mathqa",
+      "model": "claude_haiku_4_5",
+      "n_chains": 769,
+      "n_events": 700,
+      "max_step": 23,
+      "weibull": {
+        "rho": 1.3954,
+        "lambda": 4.4698,
+        "aic": 3281.4,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.1596,
+        "sigma": 0.661,
+        "aic": 3035.8,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.7312,
+        "hazard_trend_p": 0.0
+      },
+      "loglogistic": {
+        "alpha": 3.049,
+        "beta": 2.6676,
+        "aic": 3025.8,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.8024,
+        "hazard_trend_p": 0.0
+      },
+      "best_aic": "LogLogistic",
+      "weibull_delta_aic": 255.6,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "mathqa",
+      "model": "gemini_2_5_flash",
+      "n_chains": 230,
+      "n_events": 208,
+      "max_step": 13,
+      "weibull": {
+        "rho": 1.7428,
+        "lambda": 3.7549,
+        "aic": 859.1,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.0445,
+        "sigma": 0.5801,
+        "aic": 808.4,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.359,
+        "hazard_trend_p": 0.09998
+      },
+      "loglogistic": {
+        "alpha": 2.7867,
+        "beta": 2.9891,
+        "aic": 808.6,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.5641,
+        "hazard_trend_p": 0.006677
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 50.7,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "mathqa",
+      "model": "gemma2_9b",
+      "n_chains": 765,
+      "n_events": 700,
+      "max_step": 20,
+      "weibull": {
+        "rho": 1.7756,
+        "lambda": 6.4709,
+        "aic": 3618.2,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.5796,
+        "sigma": 0.6016,
+        "aic": 3509.1,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.2526,
+        "hazard_trend_p": 0.128414
+      },
+      "loglogistic": {
+        "alpha": 4.7795,
+        "beta": 2.835,
+        "aic": 3529.9,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.4316,
+        "hazard_trend_p": 0.007346
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 109.1,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "mathqa",
+      "model": "llama3.2_3b",
+      "n_chains": 763,
+      "n_events": 756,
+      "max_step": 51,
+      "weibull": {
+        "rho": 1.4602,
+        "lambda": 4.3914,
+        "aic": 3393.8,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.1874,
+        "sigma": 0.5462,
+        "aic": 3030.3,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.8714,
+        "hazard_trend_p": 0.0
+      },
+      "loglogistic": {
+        "alpha": 3.12,
+        "beta": 3.2467,
+        "aic": 3018.4,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.9216,
+        "hazard_trend_p": 0.0
+      },
+      "best_aic": "LogLogistic",
+      "weibull_delta_aic": 375.4,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "mathqa",
+      "model": "llama_3_3_70b",
+      "n_chains": 755,
+      "n_events": 698,
+      "max_step": 28,
+      "weibull": {
+        "rho": 1.5655,
+        "lambda": 4.7402,
+        "aic": 3256.8,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.2498,
+        "sigma": 0.6101,
+        "aic": 3049.7,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.7249,
+        "hazard_trend_p": 0.0
+      },
+      "loglogistic": {
+        "alpha": 3.3629,
+        "beta": 2.8034,
+        "aic": 3064.6,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.8042,
+        "hazard_trend_p": 0.0
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 207.1,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "mathqa",
+      "model": "qwen2.5_14b",
+      "n_chains": 724,
+      "n_events": 715,
+      "max_step": 19,
+      "weibull": {
+        "rho": 1.6654,
+        "lambda": 4.4123,
+        "aic": 3117.3,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.1936,
+        "sigma": 0.5724,
+        "aic": 2944.0,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.4854,
+        "hazard_trend_p": 0.003154
+      },
+      "loglogistic": {
+        "alpha": 3.2517,
+        "beta": 3.0584,
+        "aic": 2951.5,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.6725,
+        "hazard_trend_p": 1.6e-05
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 173.3,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "mathqa",
+      "model": "qwen2.5_7b",
+      "n_chains": 723,
+      "n_events": 717,
+      "max_step": 18,
+      "weibull": {
+        "rho": 1.8126,
+        "lambda": 4.1213,
+        "aic": 2944.6,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.1425,
+        "sigma": 0.5395,
+        "aic": 2794.4,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.451,
+        "hazard_trend_p": 0.00854
+      },
+      "loglogistic": {
+        "alpha": 3.0834,
+        "beta": 3.1907,
+        "aic": 2817.0,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.6601,
+        "hazard_trend_p": 4.6e-05
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 150.2,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "mmlu_pro",
+      "model": "claude_haiku_4_5",
+      "n_chains": 376,
+      "n_events": 243,
+      "max_step": 18,
+      "weibull": {
+        "rho": 1.2998,
+        "lambda": 6.9194,
+        "aic": 1429.3,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.5702,
+        "sigma": 0.9466,
+        "aic": 1394.6,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.7516,
+        "hazard_trend_p": 1e-06
+      },
+      "loglogistic": {
+        "alpha": 4.7712,
+        "beta": 1.7665,
+        "aic": 1407.3,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.7255,
+        "hazard_trend_p": 4e-06
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 34.7,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "mmlu_pro",
+      "model": "gemini_2_5_flash",
+      "n_chains": 164,
+      "n_events": 132,
+      "max_step": 11,
+      "weibull": {
+        "rho": 1.6839,
+        "lambda": 4.7606,
+        "aic": 634.8,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.2573,
+        "sigma": 0.7217,
+        "aic": 627.7,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.2727,
+        "hazard_trend_p": 0.282967
+      },
+      "loglogistic": {
+        "alpha": 3.5601,
+        "beta": 2.3235,
+        "aic": 634.0,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.3455,
+        "hazard_trend_p": 0.164573
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 7.1,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "mmlu_pro",
+      "model": "gemma2_9b",
+      "n_chains": 350,
+      "n_events": 272,
+      "max_step": 17,
+      "weibull": {
+        "rho": 1.4282,
+        "lambda": 7.3491,
+        "aic": 1585.3,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.6373,
+        "sigma": 0.8689,
+        "aic": 1575.7,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.5882,
+        "hazard_trend_p": 0.000629
+      },
+      "loglogistic": {
+        "alpha": 5.2131,
+        "beta": 1.9434,
+        "aic": 1586.8,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.5147,
+        "hazard_trend_p": 0.003346
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 9.6,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "mmlu_pro",
+      "model": "llama3.2_3b",
+      "n_chains": 349,
+      "n_events": 307,
+      "max_step": 57,
+      "weibull": {
+        "rho": 1.1809,
+        "lambda": 5.323,
+        "aic": 1601.1,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.2726,
+        "sigma": 0.7636,
+        "aic": 1489.5,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.9549,
+        "hazard_trend_p": 0.0
+      },
+      "loglogistic": {
+        "alpha": 3.4315,
+        "beta": 2.2966,
+        "aic": 1489.6,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.9724,
+        "hazard_trend_p": 0.0
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 111.6,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "mmlu_pro",
+      "model": "llama_3_3_70b",
+      "n_chains": 357,
+      "n_events": 294,
+      "max_step": 20,
+      "weibull": {
+        "rho": 1.3185,
+        "lambda": 4.4758,
+        "aic": 1426.0,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.1249,
+        "sigma": 0.8069,
+        "aic": 1358.6,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.8526,
+        "hazard_trend_p": 0.0
+      },
+      "loglogistic": {
+        "alpha": 2.99,
+        "beta": 2.0772,
+        "aic": 1370.5,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.8947,
+        "hazard_trend_p": 0.0
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 67.4,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "mmlu_pro",
+      "model": "qwen2.5_14b",
+      "n_chains": 357,
+      "n_events": 278,
+      "max_step": 20,
+      "weibull": {
+        "rho": 1.2551,
+        "lambda": 4.675,
+        "aic": 1390.0,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.1492,
+        "sigma": 0.8567,
+        "aic": 1325.3,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.8947,
+        "hazard_trend_p": 0.0
+      },
+      "loglogistic": {
+        "alpha": 3.0501,
+        "beta": 1.9311,
+        "aic": 1341.4,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.9053,
+        "hazard_trend_p": 0.0
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 64.7,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "mmlu_pro",
+      "model": "qwen2.5_7b",
+      "n_chains": 348,
+      "n_events": 272,
+      "max_step": 21,
+      "weibull": {
+        "rho": 1.2921,
+        "lambda": 5.1056,
+        "aic": 1401.6,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.2474,
+        "sigma": 0.8347,
+        "aic": 1341.0,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.8381,
+        "hazard_trend_p": 0.0
+      },
+      "loglogistic": {
+        "alpha": 3.3867,
+        "beta": 1.9953,
+        "aic": 1354.5,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.8762,
+        "hazard_trend_p": 0.0
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 60.6,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "proofwriter",
+      "model": "claude_haiku_4_5",
+      "n_chains": 500,
+      "n_events": 247,
+      "max_step": 14,
+      "weibull": {
+        "rho": 2.8495,
+        "lambda": 8.252,
+        "aic": 1437.5,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 2.014,
+        "sigma": 0.6652,
+        "aic": 1573.3,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.6484,
+        "hazard_trend_p": 0.000758
+      },
+      "loglogistic": {
+        "alpha": 7.3739,
+        "beta": 3.448,
+        "aic": 1486.5,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.6044,
+        "hazard_trend_p": 0.001957
+      },
+      "best_aic": "Weibull",
+      "weibull_delta_aic": 0.0,
+      "all_agree_increasing": true,
+      "any_increasing": true
+    },
+    {
+      "dataset": "proofwriter",
+      "model": "gemini_2_5_flash",
+      "n_chains": 195,
+      "n_events": 29,
+      "max_step": 9,
+      "weibull": {
+        "rho": 2.5912,
+        "lambda": 7.558,
+        "aic": 214.5,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.8319,
+        "sigma": 0.5339,
+        "aic": 202.6,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 1.0,
+        "hazard_trend_p": 6e-06
+      },
+      "loglogistic": {
+        "alpha": 6.1201,
+        "beta": 3.2503,
+        "aic": 209.0,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.8889,
+        "hazard_trend_p": 0.000243
+      },
+      "best_aic": "LogNormal",
+      "weibull_delta_aic": 11.9,
+      "all_agree_increasing": true,
+      "any_increasing": true
+    },
+    {
+      "dataset": "proofwriter",
+      "model": "gemma2_9b",
+      "n_chains": 499,
+      "n_events": 269,
+      "max_step": 24,
+      "weibull": {
+        "rho": 2.1527,
+        "lambda": 13.4521,
+        "aic": 1867.8,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 2.3746,
+        "sigma": 0.6004,
+        "aic": 1849.4,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.587,
+        "hazard_trend_p": 2.3e-05
+      },
+      "loglogistic": {
+        "alpha": 10.7108,
+        "beta": 2.937,
+        "aic": 1849.3,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.3333,
+        "hazard_trend_p": 0.022808
+      },
+      "best_aic": "LogLogistic",
+      "weibull_delta_aic": 18.5,
+      "all_agree_increasing": true,
+      "any_increasing": true
+    },
+    {
+      "dataset": "proofwriter",
+      "model": "llama3.2_3b",
+      "n_chains": 497,
+      "n_events": 338,
+      "max_step": 42,
+      "weibull": {
+        "rho": 1.5583,
+        "lambda": 15.3027,
+        "aic": 2444.5,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 2.3943,
+        "sigma": 0.7623,
+        "aic": 2414.8,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.4332,
+        "hazard_trend_p": 5.3e-05
+      },
+      "loglogistic": {
+        "alpha": 10.8886,
+        "beta": 2.318,
+        "aic": 2412.9,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.4309,
+        "hazard_trend_p": 5.8e-05
+      },
+      "best_aic": "LogLogistic",
+      "weibull_delta_aic": 31.6,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    },
+    {
+      "dataset": "proofwriter",
+      "model": "llama_3_3_70b",
+      "n_chains": 494,
+      "n_events": 187,
+      "max_step": 24,
+      "weibull": {
+        "rho": 2.6327,
+        "lambda": 12.0969,
+        "aic": 1314.6,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 2.3746,
+        "sigma": 0.603,
+        "aic": 1336.3,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.5797,
+        "hazard_trend_p": 3e-05
+      },
+      "loglogistic": {
+        "alpha": 10.3654,
+        "beta": 3.3178,
+        "aic": 1311.8,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.3261,
+        "hazard_trend_p": 0.02611
+      },
+      "best_aic": "LogLogistic",
+      "weibull_delta_aic": 2.8,
+      "all_agree_increasing": true,
+      "any_increasing": true
+    },
+    {
+      "dataset": "proofwriter",
+      "model": "qwen2.5_14b",
+      "n_chains": 500,
+      "n_events": 255,
+      "max_step": 15,
+      "weibull": {
+        "rho": 2.6972,
+        "lambda": 7.4869,
+        "aic": 1432.9,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 1.8409,
+        "sigma": 0.4874,
+        "aic": 1420.8,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.7333,
+        "hazard_trend_p": 3.7e-05
+      },
+      "loglogistic": {
+        "alpha": 6.2626,
+        "beta": 3.7414,
+        "aic": 1412.1,
+        "increasing_hazard": true,
+        "hazard_trend_tau": 0.2762,
+        "hazard_trend_p": 0.168578
+      },
+      "best_aic": "LogLogistic",
+      "weibull_delta_aic": 20.8,
+      "all_agree_increasing": true,
+      "any_increasing": true
+    },
+    {
+      "dataset": "proofwriter",
+      "model": "qwen2.5_7b",
+      "n_chains": 500,
+      "n_events": 288,
+      "max_step": 34,
+      "weibull": {
+        "rho": 2.0182,
+        "lambda": 11.0256,
+        "aic": 1878.0,
+        "increasing_hazard": true
+      },
+      "lognormal": {
+        "mu": 2.1573,
+        "sigma": 0.6075,
+        "aic": 1850.6,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.1658,
+        "hazard_trend_p": 0.167996
+      },
+      "loglogistic": {
+        "alpha": 8.6146,
+        "beta": 2.9687,
+        "aic": 1841.7,
+        "increasing_hazard": false,
+        "hazard_trend_tau": -0.3298,
+        "hazard_trend_p": 0.006097
+      },
+      "best_aic": "LogLogistic",
+      "weibull_delta_aic": 36.3,
+      "all_agree_increasing": false,
+      "any_increasing": true
+    }
+  ],
+  "summary": {
+    "n_total_cells": 35,
+    "increasing_hazard": {
+      "weibull": 34,
+      "lognormal": 9,
+      "loglogistic": 12,
+      "all_three_agree": 9
+    },
+    "aic_best_distribution": {
+      "Weibull": 4,
+      "LogNormal": 21,
+      "LogLogistic": 10
+    }
+  },
+  "task_level_ranking": {
+    "weibull_ranking_by_mean_rho": [
+      "logic",
+      "state_tracking",
+      "math",
+      "multi_domain"
+    ],
+    "lognormal_ranking_by_mean_tau": [
+      "logic",
+      "state_tracking",
+      "math",
+      "multi_domain"
+    ],
+    "loglogistic_ranking_by_mean_tau": [
+      "logic",
+      "math",
+      "state_tracking",
+      "multi_domain"
+    ],
+    "category_metrics": {
+      "multi_domain": {
+        "n_cells": 7,
+        "weibull_mean_rho": 1.3512,
+        "lognormal_frac_increasing": 0.0,
+        "lognormal_mean_tau": -0.7361,
+        "loglogistic_frac_increasing": 0.0,
+        "loglogistic_mean_tau": -0.7478
+      },
+      "logic": {
+        "n_cells": 7,
+        "weibull_mean_rho": 2.3571,
+        "lognormal_frac_increasing": 0.7143,
+        "lognormal_mean_tau": 0.4213,
+        "loglogistic_frac_increasing": 0.7143,
+        "loglogistic_mean_tau": 0.2383
+      },
+      "math": {
+        "n_cells": 14,
+        "weibull_mean_rho": 1.5616,
+        "lognormal_frac_increasing": 0.1429,
+        "lognormal_mean_tau": -0.391,
+        "loglogistic_frac_increasing": 0.3571,
+        "loglogistic_mean_tau": -0.2298
+      },
+      "state_tracking": {
+        "n_cells": 7,
+        "weibull_mean_rho": 1.6758,
+        "lognormal_frac_increasing": 0.2857,
+        "lognormal_mean_tau": -0.3061,
+        "loglogistic_frac_increasing": 0.2857,
+        "loglogistic_mean_tau": -0.3742
+      }
+    },
+    "rankings_identical": false,
+    "top_category_consistent": true
+  },
+  "defense_narrative": {
+    "weibull_best_count": "4/35",
+    "increasing_hazard_robust": "Weibull: 34/35, LogNormal: 9/35, LogLogistic: 12/35",
+    "all_three_agree": "9/35",
+    "ranking_consistent": false
+  }
+}

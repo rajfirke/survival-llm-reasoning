@@ -1,0 +1,36 @@
+dataset,model,half_life,dataset_label,model_label
+gsm8k,llama3.2_3b,34.0,GSM8K,Llama-3.2-3B
+gsm8k,qwen2.5_7b,inf,GSM8K,Qwen2.5-7B
+gsm8k,gemma2_9b,19.0,GSM8K,Gemma2-9B
+gsm8k,qwen2.5_14b,inf,GSM8K,Qwen2.5-14B
+gsm8k,gemini_2_5_flash,inf,GSM8K,Gemini-2.5-Flash
+gsm8k,claude_haiku_4_5,5.0,GSM8K,Claude-Haiku-4.5
+gsm8k,llama_3_3_70b,inf,GSM8K,Llama-3.3-70B
+mathqa,llama3.2_3b,3.0,MathQA,Llama-3.2-3B
+mathqa,qwen2.5_7b,3.0,MathQA,Qwen2.5-7B
+mathqa,gemma2_9b,5.0,MathQA,Gemma2-9B
+mathqa,qwen2.5_14b,3.0,MathQA,Qwen2.5-14B
+mathqa,gemini_2_5_flash,3.0,MathQA,Gemini-2.5-Flash
+mathqa,claude_haiku_4_5,3.0,MathQA,Claude-Haiku-4.5
+mathqa,llama_3_3_70b,3.0,MathQA,Llama-3.3-70B
+bbh_tracking,llama3.2_3b,4.0,BBH Tracking,Llama-3.2-3B
+bbh_tracking,qwen2.5_7b,1.0,BBH Tracking,Qwen2.5-7B
+bbh_tracking,gemma2_9b,inf,BBH Tracking,Gemma2-9B
+bbh_tracking,qwen2.5_14b,1.0,BBH Tracking,Qwen2.5-14B
+bbh_tracking,gemini_2_5_flash,5.0,BBH Tracking,Gemini-2.5-Flash
+bbh_tracking,claude_haiku_4_5,1.0,BBH Tracking,Claude-Haiku-4.5
+bbh_tracking,llama_3_3_70b,5.0,BBH Tracking,Llama-3.3-70B
+proofwriter,llama3.2_3b,10.0,ProofWriter,Llama-3.2-3B
+proofwriter,qwen2.5_7b,9.0,ProofWriter,Qwen2.5-7B
+proofwriter,gemma2_9b,11.0,ProofWriter,Gemma2-9B
+proofwriter,qwen2.5_14b,6.0,ProofWriter,Qwen2.5-14B
+proofwriter,gemini_2_5_flash,inf,ProofWriter,Gemini-2.5-Flash
+proofwriter,claude_haiku_4_5,7.0,ProofWriter,Claude-Haiku-4.5
+proofwriter,llama_3_3_70b,10.0,ProofWriter,Llama-3.3-70B
+mmlu_pro,llama3.2_3b,4.0,MMLU-Pro,Llama-3.2-3B
+mmlu_pro,qwen2.5_7b,3.0,MMLU-Pro,Qwen2.5-7B
+mmlu_pro,gemma2_9b,5.0,MMLU-Pro,Gemma2-9B
+mmlu_pro,qwen2.5_14b,3.0,MMLU-Pro,Qwen2.5-14B
+mmlu_pro,gemini_2_5_flash,4.0,MMLU-Pro,Gemini-2.5-Flash
+mmlu_pro,claude_haiku_4_5,5.0,MMLU-Pro,Claude-Haiku-4.5
+mmlu_pro,llama_3_3_70b,3.0,MMLU-Pro,Llama-3.3-70B

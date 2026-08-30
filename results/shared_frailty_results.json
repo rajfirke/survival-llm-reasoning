@@ -1,0 +1,457 @@
+{
+  "variance_components": {
+    "bbh_tracking": {
+      "n_eligible_problems": 500,
+      "n_valid_fits": 498,
+      "pooled_rho": 1.0574,
+      "within_problem_mean_rho": 1.1276,
+      "within_problem_median_rho": 1.0745,
+      "var_between_problem_rho": 0.0561,
+      "frailty_variance_theta": 0.0441,
+      "theta_interpretation": "negligible",
+      "icc_duration": 0.0,
+      "icc_f_stat": 0.56,
+      "icc_p_value": 1.0,
+      "icc_significant": false,
+      "aging_after_frailty": true,
+      "aging_after_frailty_strong": "True",
+      "ttest_rho_gt_1": {
+        "t_stat": 12.018,
+        "p_value_one_sided": 0.0
+      }
+    },
+    "gsm8k": {
+      "n_eligible_problems": 896,
+      "n_valid_fits": 332,
+      "pooled_rho": 1.4702,
+      "within_problem_mean_rho": 2.2844,
+      "within_problem_median_rho": 1.6956,
+      "var_between_problem_rho": 3.2001,
+      "frailty_variance_theta": 0.6132,
+      "theta_interpretation": "moderate",
+      "icc_duration": 0.1124,
+      "icc_f_stat": 1.76,
+      "icc_p_value": 0.0,
+      "icc_significant": true,
+      "aging_after_frailty": true,
+      "aging_after_frailty_strong": "True",
+      "ttest_rho_gt_1": {
+        "t_stat": 13.082,
+        "p_value_one_sided": 0.0
+      }
+    },
+    "mathqa": {
+      "n_eligible_problems": 789,
+      "n_valid_fits": 732,
+      "pooled_rho": 1.549,
+      "within_problem_mean_rho": 3.1205,
+      "within_problem_median_rho": 2.5837,
+      "var_between_problem_rho": 5.0939,
+      "frailty_variance_theta": 0.5231,
+      "theta_interpretation": "moderate",
+      "icc_duration": 0.2342,
+      "icc_f_stat": 2.83,
+      "icc_p_value": 0.0,
+      "icc_significant": true,
+      "aging_after_frailty": true,
+      "aging_after_frailty_strong": "True",
+      "ttest_rho_gt_1": {
+        "t_stat": 25.419,
+        "p_value_one_sided": 0.0
+      }
+    },
+    "mmlu_pro": {
+      "n_eligible_problems": 394,
+      "n_valid_fits": 339,
+      "pooled_rho": 1.2693,
+      "within_problem_mean_rho": 2.5151,
+      "within_problem_median_rho": 2.0449,
+      "var_between_problem_rho": 3.6493,
+      "frailty_variance_theta": 0.5769,
+      "theta_interpretation": "moderate",
+      "icc_duration": 0.2322,
+      "icc_f_stat": 2.76,
+      "icc_p_value": 0.0,
+      "icc_significant": true,
+      "aging_after_frailty": true,
+      "aging_after_frailty_strong": "True",
+      "ttest_rho_gt_1": {
+        "t_stat": 14.603,
+        "p_value_one_sided": 0.0
+      }
+    },
+    "proofwriter": {
+      "n_eligible_problems": 500,
+      "n_valid_fits": 413,
+      "pooled_rho": 1.801,
+      "within_problem_mean_rho": 3.869,
+      "within_problem_median_rho": 3.1026,
+      "var_between_problem_rho": 8.0042,
+      "frailty_variance_theta": 0.5347,
+      "theta_interpretation": "moderate",
+      "icc_duration": 0.0924,
+      "icc_f_stat": 1.65,
+      "icc_p_value": 0.0,
+      "icc_significant": true,
+      "aging_after_frailty": true,
+      "aging_after_frailty_strong": "True",
+      "ttest_rho_gt_1": {
+        "t_stat": 20.609,
+        "p_value_one_sided": 0.0
+      }
+    }
+  },
+  "coxph_problem_effects": {
+    "bbh_tracking": {
+      "n_chains": 1345,
+      "n_problems": 200,
+      "concordance": 0.6349,
+      "frailty_variance_proxy": 0.108,
+      "mean_problem_coef": 0.0097,
+      "log_nsteps_coef": 0.2177,
+      "log_nsteps_p": 0.616719,
+      "aic": 13907.0
+    },
+    "gsm8k": {
+      "n_chains": 1164,
+      "n_problems": 200,
+      "concordance": 0.8139,
+      "frailty_variance_proxy": 0.6725,
+      "mean_problem_coef": 0.0014,
+      "log_nsteps_coef": -0.4637,
+      "log_nsteps_p": 0.018682,
+      "aic": 4182.3
+    },
+    "mathqa": {
+      "n_chains": 1176,
+      "n_problems": 200,
+      "concordance": 0.7939,
+      "frailty_variance_proxy": 0.5911,
+      "mean_problem_coef": -0.0306,
+      "log_nsteps_coef": -1.3709,
+      "log_nsteps_p": 0.0,
+      "aic": 13485.8
+    },
+    "mmlu_pro": {
+      "n_chains": 1154,
+      "n_problems": 200,
+      "concordance": 0.778,
+      "frailty_variance_proxy": 0.8538,
+      "mean_problem_coef": 0.0549,
+      "log_nsteps_coef": -0.5885,
+      "log_nsteps_p": 0.0,
+      "aic": 10926.4
+    },
+    "proofwriter": {
+      "n_chains": 1282,
+      "n_problems": 200,
+      "concordance": 0.9437,
+      "frailty_variance_proxy": 0.8063,
+      "mean_problem_coef": -0.0092,
+      "log_nsteps_coef": -3.2359,
+      "log_nsteps_p": 0.0,
+      "aic": 7047.4
+    }
+  },
+  "em_gamma_frailty": {
+    "bbh_tracking": {
+      "rho_marginal": 1.0574,
+      "rho_frailty": 1.0574,
+      "lambda_frailty": 3.8996,
+      "theta": 0.0,
+      "theta_interpretation": "negligible",
+      "converged": true,
+      "n_iterations": 5,
+      "n_problems": 500,
+      "rho_change_pct": 0.0,
+      "aging_after_frailty": "True"
+    },
+    "gsm8k": {
+      "rho_marginal": 1.4702,
+      "rho_frailty": 1.4717,
+      "lambda_frailty": 13.8316,
+      "theta": 0.0,
+      "theta_interpretation": "negligible",
+      "converged": true,
+      "n_iterations": 6,
+      "n_problems": 955,
+      "rho_change_pct": 0.1,
+      "aging_after_frailty": "True"
+    },
+    "mathqa": {
+      "rho_marginal": 1.549,
+      "rho_frailty": 1.5488,
+      "lambda_frailty": 4.7152,
+      "theta": 0.0,
+      "theta_interpretation": "negligible",
+      "converged": true,
+      "n_iterations": 15,
+      "n_problems": 797,
+      "rho_change_pct": -0.01,
+      "aging_after_frailty": "True"
+    },
+    "mmlu_pro": {
+      "rho_marginal": 1.2693,
+      "rho_frailty": 1.2691,
+      "lambda_frailty": 5.5696,
+      "theta": 0.0,
+      "theta_interpretation": "negligible",
+      "converged": true,
+      "n_iterations": 27,
+      "n_problems": 398,
+      "rho_change_pct": -0.01,
+      "aging_after_frailty": "True"
+    },
+    "proofwriter": {
+      "rho_marginal": 1.801,
+      "rho_frailty": 1.801,
+      "lambda_frailty": 12.196,
+      "theta": 0.0,
+      "theta_interpretation": "negligible",
+      "converged": true,
+      "n_iterations": 18,
+      "n_problems": 500,
+      "rho_change_pct": 0.0,
+      "aging_after_frailty": "True"
+    }
+  },
+  "per_cell_frailty": {
+    "bbh_tracking_claude_haiku_4_5": {
+      "rho_standard": 1.391,
+      "rho_frailty": 1.1276,
+      "rho_change_pct": -18.94,
+      "n_problems_used": 498
+    },
+    "bbh_tracking_gemini_2_5_flash": {
+      "rho_standard": 1.833,
+      "rho_frailty": 1.1592,
+      "rho_change_pct": -36.76,
+      "n_problems_used": 341
+    },
+    "bbh_tracking_gemma2_9b": {
+      "rho_standard": 3.7616,
+      "rho_frailty": 1.1276,
+      "rho_change_pct": -70.02,
+      "n_problems_used": 498
+    },
+    "bbh_tracking_llama3.2_3b": {
+      "rho_standard": 1.664,
+      "rho_frailty": 1.1276,
+      "rho_change_pct": -32.24,
+      "n_problems_used": 498
+    },
+    "bbh_tracking_llama_3_3_70b": {
+      "rho_standard": 0.7722,
+      "rho_frailty": 1.1276,
+      "rho_change_pct": 46.01,
+      "n_problems_used": 498
+    },
+    "bbh_tracking_qwen2.5_14b": {
+      "rho_standard": 1.224,
+      "rho_frailty": 1.1276,
+      "rho_change_pct": -7.88,
+      "n_problems_used": 498
+    },
+    "bbh_tracking_qwen2.5_7b": {
+      "rho_standard": 1.0845,
+      "rho_frailty": 1.1276,
+      "rho_change_pct": 3.97,
+      "n_problems_used": 498
+    },
+    "gsm8k_claude_haiku_4_5": {
+      "rho_standard": 1.8539,
+      "rho_frailty": 2.2922,
+      "rho_change_pct": 23.64,
+      "n_problems_used": 326
+    },
+    "gsm8k_gemini_2_5_flash": {
+      "rho_standard": 1.2933,
+      "rho_frailty": 2.3168,
+      "rho_change_pct": 79.13,
+      "n_problems_used": 233
+    },
+    "gsm8k_gemma2_9b": {
+      "rho_standard": 1.3065,
+      "rho_frailty": 2.3013,
+      "rho_change_pct": 76.14,
+      "n_problems_used": 315
+    },
+    "gsm8k_llama3.2_3b": {
+      "rho_standard": 1.3151,
+      "rho_frailty": 2.2676,
+      "rho_change_pct": 72.43,
+      "n_problems_used": 327
+    },
+    "gsm8k_llama_3_3_70b": {
+      "rho_standard": 1.3757,
+      "rho_frailty": 2.2328,
+      "rho_change_pct": 62.31,
+      "n_problems_used": 254
+    },
+    "gsm8k_qwen2.5_14b": {
+      "rho_standard": 1.5894,
+      "rho_frailty": 2.296,
+      "rho_change_pct": 44.46,
+      "n_problems_used": 321
+    },
+    "gsm8k_qwen2.5_7b": {
+      "rho_standard": 1.7108,
+      "rho_frailty": 2.2574,
+      "rho_change_pct": 31.95,
+      "n_problems_used": 290
+    },
+    "mathqa_claude_haiku_4_5": {
+      "rho_standard": 1.3954,
+      "rho_frailty": 3.1155,
+      "rho_change_pct": 123.27,
+      "n_problems_used": 721
+    },
+    "mathqa_gemini_2_5_flash": {
+      "rho_standard": 1.7428,
+      "rho_frailty": 3.4904,
+      "rho_change_pct": 100.28,
+      "n_problems_used": 214
+    },
+    "mathqa_gemma2_9b": {
+      "rho_standard": 1.7756,
+      "rho_frailty": 3.113,
+      "rho_change_pct": 75.32,
+      "n_problems_used": 724
+    },
+    "mathqa_llama3.2_3b": {
+      "rho_standard": 1.4602,
+      "rho_frailty": 3.1272,
+      "rho_change_pct": 114.17,
+      "n_problems_used": 712
+    },
+    "mathqa_llama_3_3_70b": {
+      "rho_standard": 1.5655,
+      "rho_frailty": 3.1399,
+      "rho_change_pct": 100.58,
+      "n_problems_used": 708
+    },
+    "mathqa_qwen2.5_14b": {
+      "rho_standard": 1.6654,
+      "rho_frailty": 3.1166,
+      "rho_change_pct": 87.13,
+      "n_problems_used": 693
+    },
+    "mathqa_qwen2.5_7b": {
+      "rho_standard": 1.8126,
+      "rho_frailty": 3.1335,
+      "rho_change_pct": 72.88,
+      "n_problems_used": 691
+    },
+    "mmlu_pro_claude_haiku_4_5": {
+      "rho_standard": 1.2998,
+      "rho_frailty": 2.5314,
+      "rho_change_pct": 94.75,
+      "n_problems_used": 332
+    },
+    "mmlu_pro_gemini_2_5_flash": {
+      "rho_standard": 1.6839,
+      "rho_frailty": 2.4754,
+      "rho_change_pct": 47.01,
+      "n_problems_used": 131
+    },
+    "mmlu_pro_gemma2_9b": {
+      "rho_standard": 1.4282,
+      "rho_frailty": 2.453,
+      "rho_change_pct": 71.75,
+      "n_problems_used": 307
+    },
+    "mmlu_pro_llama3.2_3b": {
+      "rho_standard": 1.1809,
+      "rho_frailty": 2.5121,
+      "rho_change_pct": 112.73,
+      "n_problems_used": 308
+    },
+    "mmlu_pro_llama_3_3_70b": {
+      "rho_standard": 1.3185,
+      "rho_frailty": 2.5234,
+      "rho_change_pct": 91.38,
+      "n_problems_used": 323
+    },
+    "mmlu_pro_qwen2.5_14b": {
+      "rho_standard": 1.2551,
+      "rho_frailty": 2.5091,
+      "rho_change_pct": 99.92,
+      "n_problems_used": 329
+    },
+    "mmlu_pro_qwen2.5_7b": {
+      "rho_standard": 1.2921,
+      "rho_frailty": 2.5214,
+      "rho_change_pct": 95.14,
+      "n_problems_used": 318
+    },
+    "proofwriter_claude_haiku_4_5": {
+      "rho_standard": 2.8495,
+      "rho_frailty": 3.869,
+      "rho_change_pct": 35.78,
+      "n_problems_used": 413
+    },
+    "proofwriter_gemini_2_5_flash": {
+      "rho_standard": 2.5912,
+      "rho_frailty": 3.598,
+      "rho_change_pct": 38.85,
+      "n_problems_used": 131
+    },
+    "proofwriter_gemma2_9b": {
+      "rho_standard": 2.1527,
+      "rho_frailty": 3.8681,
+      "rho_change_pct": 79.69,
+      "n_problems_used": 412
+    },
+    "proofwriter_llama3.2_3b": {
+      "rho_standard": 1.5583,
+      "rho_frailty": 3.8774,
+      "rho_change_pct": 148.83,
+      "n_problems_used": 410
+    },
+    "proofwriter_llama_3_3_70b": {
+      "rho_standard": 2.6327,
+      "rho_frailty": 3.8768,
+      "rho_change_pct": 47.25,
+      "n_problems_used": 408
+    },
+    "proofwriter_qwen2.5_14b": {
+      "rho_standard": 2.6972,
+      "rho_frailty": 3.869,
+      "rho_change_pct": 43.45,
+      "n_problems_used": 413
+    },
+    "proofwriter_qwen2.5_7b": {
+      "rho_standard": 2.0182,
+      "rho_frailty": 3.869,
+      "rho_change_pct": 91.71,
+      "n_problems_used": 413
+    }
+  },
+  "summary": {
+    "n_cells_total": 35,
+    "n_aging_after_frailty": 35,
+    "pct_aging_after_frailty": 100.0,
+    "task_ranking_after_frailty": [
+      {
+        "dataset": "proofwriter",
+        "rho_frailty": 3.869
+      },
+      {
+        "dataset": "mathqa",
+        "rho_frailty": 3.1205
+      },
+      {
+        "dataset": "mmlu_pro",
+        "rho_frailty": 2.5151
+      },
+      {
+        "dataset": "gsm8k",
+        "rho_frailty": 2.2844
+      },
+      {
+        "dataset": "bbh_tracking",
+        "rho_frailty": 1.1276
+      }
+    ]
+  }
+}

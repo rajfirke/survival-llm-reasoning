@@ -1,0 +1,632 @@
+{
+  "bbh_tracking": {
+    "k_results": {
+      "1": {
+        "uniform_mean": 0.7114,
+        "uniform_std": 0.285,
+        "late_weighted_mean": 0.9418,
+        "late_weighted_std": 0.1249,
+        "hazard_prop_mean": 0.8056,
+        "hazard_prop_std": 0.1911,
+        "best_strategy": "late",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 142087.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.62
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 207690.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.933
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 23.0,
+            "p_value": 1.0,
+            "significant": false,
+            "effect_size_d": -1.126
+          }
+        },
+        "n_splits": 700
+      },
+      "2": {
+        "uniform_mean": 0.7948,
+        "uniform_std": 0.2178,
+        "late_weighted_mean": 0.9554,
+        "late_weighted_std": 0.0947,
+        "hazard_prop_mean": 0.9195,
+        "hazard_prop_std": 0.105,
+        "best_strategy": "late",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 181033.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.731
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 199648.5,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.843
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 10541.5,
+            "p_value": 1.0,
+            "significant": false,
+            "effect_size_d": -0.705
+          }
+        },
+        "n_splits": 700
+      },
+      "3": {
+        "uniform_mean": 0.8601,
+        "uniform_std": 0.1562,
+        "late_weighted_mean": 0.9642,
+        "late_weighted_std": 0.0724,
+        "hazard_prop_mean": 0.966,
+        "hazard_prop_std": 0.0529,
+        "best_strategy": "hazard_prop",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 170004.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.758
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 165687.5,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.744
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 56458.5,
+            "p_value": 0.191746,
+            "significant": false,
+            "effect_size_d": 0.052
+          }
+        },
+        "n_splits": 700
+      },
+      "5": {
+        "uniform_mean": 0.9613,
+        "uniform_std": 0.0512,
+        "late_weighted_mean": 0.9925,
+        "late_weighted_std": 0.0124,
+        "hazard_prop_mean": 0.9959,
+        "hazard_prop_std": 0.008,
+        "best_strategy": "hazard_prop",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 113078.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.68
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 111880.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.61
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 40880.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.287
+          }
+        },
+        "n_splits": 700
+      }
+    },
+    "crossover_k": 3,
+    "interpretation": "Hazard-proportional matches or exceeds late-weighted at K=3"
+  },
+  "gsm8k": {
+    "k_results": {
+      "1": {
+        "uniform_mean": 0.3559,
+        "uniform_std": 0.0816,
+        "late_weighted_mean": 0.4,
+        "late_weighted_std": 0.1306,
+        "hazard_prop_mean": 0.438,
+        "hazard_prop_std": 0.0883,
+        "best_strategy": "hazard_prop",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 185114.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.858
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 144255.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.283
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 144649.5,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.245
+          }
+        },
+        "n_splits": 700
+      },
+      "2": {
+        "uniform_mean": 0.5824,
+        "uniform_std": 0.0879,
+        "late_weighted_mean": 0.6616,
+        "late_weighted_std": 0.1133,
+        "hazard_prop_mean": 0.6738,
+        "hazard_prop_std": 0.083,
+        "best_strategy": "hazard_prop",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 189955.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.931
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 175310.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.638
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 111451.5,
+            "p_value": 0.033821,
+            "significant": true,
+            "effect_size_d": 0.1
+          }
+        },
+        "n_splits": 700
+      },
+      "3": {
+        "uniform_mean": 0.7447,
+        "uniform_std": 0.0726,
+        "late_weighted_mean": 0.8129,
+        "late_weighted_std": 0.0751,
+        "hazard_prop_mean": 0.8246,
+        "hazard_prop_std": 0.066,
+        "best_strategy": "hazard_prop",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 198014.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.993
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 175031.5,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.73
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 113144.5,
+            "p_value": 0.000105,
+            "significant": true,
+            "effect_size_d": 0.134
+          }
+        },
+        "n_splits": 700
+      },
+      "5": {
+        "uniform_mean": 0.9265,
+        "uniform_std": 0.0462,
+        "late_weighted_mean": 0.9436,
+        "late_weighted_std": 0.0333,
+        "hazard_prop_mean": 0.9462,
+        "hazard_prop_std": 0.0407,
+        "best_strategy": "hazard_prop",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 116294.5,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.418
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 111200.5,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.342
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 89464.0,
+            "p_value": 0.003564,
+            "significant": true,
+            "effect_size_d": 0.054
+          }
+        },
+        "n_splits": 700
+      }
+    },
+    "crossover_k": 1,
+    "interpretation": "Hazard-proportional matches or exceeds late-weighted at K=1"
+  },
+  "mathqa": {
+    "k_results": {
+      "1": {
+        "uniform_mean": 0.3954,
+        "uniform_std": 0.0704,
+        "late_weighted_mean": 0.4,
+        "late_weighted_std": 0.1254,
+        "hazard_prop_mean": 0.4644,
+        "hazard_prop_std": 0.0647,
+        "best_strategy": "hazard_prop",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 231833.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 1.371
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 125227.5,
+            "p_value": 0.011539,
+            "significant": true,
+            "effect_size_d": 0.046
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 194440.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.67
+          }
+        },
+        "n_splits": 700
+      },
+      "2": {
+        "uniform_mean": 0.6204,
+        "uniform_std": 0.084,
+        "late_weighted_mean": 0.6804,
+        "late_weighted_std": 0.094,
+        "hazard_prop_mean": 0.6878,
+        "hazard_prop_std": 0.0671,
+        "best_strategy": "hazard_prop",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 232511.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 1.382
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 194432.5,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.678
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 124293.0,
+            "p_value": 0.055554,
+            "significant": false,
+            "effect_size_d": 0.099
+          }
+        },
+        "n_splits": 700
+      },
+      "3": {
+        "uniform_mean": 0.7566,
+        "uniform_std": 0.0799,
+        "late_weighted_mean": 0.8017,
+        "late_weighted_std": 0.0754,
+        "hazard_prop_mean": 0.8094,
+        "hazard_prop_std": 0.0601,
+        "best_strategy": "hazard_prop",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 219745.5,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 1.233
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 206096.5,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.883
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 141993.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.174
+          }
+        },
+        "n_splits": 700
+      },
+      "5": {
+        "uniform_mean": 0.9049,
+        "uniform_std": 0.0575,
+        "late_weighted_mean": 0.9141,
+        "late_weighted_std": 0.044,
+        "hazard_prop_mean": 0.9289,
+        "hazard_prop_std": 0.0373,
+        "best_strategy": "hazard_prop",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 177139.5,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.741
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 116615.0,
+            "p_value": 0.000802,
+            "significant": true,
+            "effect_size_d": 0.194
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 154646.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 0.425
+          }
+        },
+        "n_splits": 700
+      }
+    },
+    "crossover_k": 1,
+    "interpretation": "Hazard-proportional matches or exceeds late-weighted at K=1"
+  },
+  "mmlu_pro": {
+    "k_results": {
+      "1": {
+        "uniform_mean": 0.5528,
+        "uniform_std": 0.0694,
+        "late_weighted_mean": 0.6694,
+        "late_weighted_std": 0.0749,
+        "hazard_prop_mean": 0.5635,
+        "hazard_prop_std": 0.066,
+        "best_strategy": "late",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 126427.0,
+            "p_value": 4.4e-05,
+            "significant": true,
+            "effect_size_d": 0.15
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 220031.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 1.02
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 15080.5,
+            "p_value": 1.0,
+            "significant": false,
+            "effect_size_d": -1.032
+          }
+        },
+        "n_splits": 700
+      },
+      "2": {
+        "uniform_mean": 0.7522,
+        "uniform_std": 0.0591,
+        "late_weighted_mean": 0.8492,
+        "late_weighted_std": 0.046,
+        "hazard_prop_mean": 0.7595,
+        "hazard_prop_std": 0.0524,
+        "best_strategy": "late",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 108110.0,
+            "p_value": 0.001524,
+            "significant": true,
+            "effect_size_d": 0.127
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 216452.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 1.265
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 5464.0,
+            "p_value": 1.0,
+            "significant": false,
+            "effect_size_d": -1.334
+          }
+        },
+        "n_splits": 700
+      },
+      "3": {
+        "uniform_mean": 0.853,
+        "uniform_std": 0.0497,
+        "late_weighted_mean": 0.9597,
+        "late_weighted_std": 0.0277,
+        "hazard_prop_mean": 0.8565,
+        "hazard_prop_std": 0.0417,
+        "best_strategy": "late",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 106679.5,
+            "p_value": 0.122182,
+            "significant": false,
+            "effect_size_d": 0.069
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 241737.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 1.963
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 157.0,
+            "p_value": 1.0,
+            "significant": false,
+            "effect_size_d": -2.218
+          }
+        },
+        "n_splits": 700
+      },
+      "5": {
+        "uniform_mean": 0.951,
+        "uniform_std": 0.0296,
+        "late_weighted_mean": 0.9885,
+        "late_weighted_std": 0.0131,
+        "hazard_prop_mean": 0.9444,
+        "hazard_prop_std": 0.0267,
+        "best_strategy": "late",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 63130.0,
+            "p_value": 1.0,
+            "significant": false,
+            "effect_size_d": -0.207
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 196496.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 1.214
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 1221.0,
+            "p_value": 1.0,
+            "significant": false,
+            "effect_size_d": -1.652
+          }
+        },
+        "n_splits": 700
+      }
+    },
+    "crossover_k": null,
+    "interpretation": "Late-weighted dominates at all K values tested"
+  },
+  "proofwriter": {
+    "k_results": {
+      "1": {
+        "uniform_mean": 0.2254,
+        "uniform_std": 0.0986,
+        "late_weighted_mean": 0.9397,
+        "late_weighted_std": 0.0561,
+        "hazard_prop_mean": 0.4181,
+        "hazard_prop_std": 0.1699,
+        "best_strategy": "late",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 235174.5,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 1.414
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 243940.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 5.576
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 150.0,
+            "p_value": 1.0,
+            "significant": false,
+            "effect_size_d": -2.71
+          }
+        },
+        "n_splits": 699
+      },
+      "2": {
+        "uniform_mean": 0.4048,
+        "uniform_std": 0.1446,
+        "late_weighted_mean": 0.9871,
+        "late_weighted_std": 0.016,
+        "hazard_prop_mean": 0.6574,
+        "hazard_prop_std": 0.1905,
+        "best_strategy": "late",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 242547.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 2.208
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 243253.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 4.224
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 0.0,
+            "p_value": 1.0,
+            "significant": false,
+            "effect_size_d": -1.807
+          }
+        },
+        "n_splits": 700
+      },
+      "3": {
+        "uniform_mean": 0.5689,
+        "uniform_std": 0.1993,
+        "late_weighted_mean": 0.9928,
+        "late_weighted_std": 0.0128,
+        "hazard_prop_mean": 0.7905,
+        "hazard_prop_std": 0.1467,
+        "best_strategy": "late",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 180299.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 1.805
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 180300.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 2.183
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 0.0,
+            "p_value": 1.0,
+            "significant": false,
+            "effect_size_d": -1.435
+          }
+        },
+        "n_splits": 700
+      },
+      "5": {
+        "uniform_mean": 0.772,
+        "uniform_std": 0.137,
+        "late_weighted_mean": 0.9979,
+        "late_weighted_std": 0.005,
+        "hazard_prop_mean": 0.9042,
+        "hazard_prop_std": 0.095,
+        "best_strategy": "late",
+        "tests": {
+          "hazprop_vs_uniform": {
+            "wilcoxon_stat": 179087.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 1.541
+          },
+          "late_vs_uniform": {
+            "wilcoxon_stat": 180300.0,
+            "p_value": 0.0,
+            "significant": true,
+            "effect_size_d": 1.671
+          },
+          "hazprop_vs_late": {
+            "wilcoxon_stat": 0.0,
+            "p_value": 1.0,
+            "significant": false,
+            "effect_size_d": -1.006
+          }
+        },
+        "n_splits": 699
+      }
+    },
+    "crossover_k": null,
+    "interpretation": "Late-weighted dominates at all K values tested"
+  }
+}

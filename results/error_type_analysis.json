@@ -1,0 +1,231 @@
+{
+  "error_patterns": {
+    "bbh_tracking": {
+      "n_chains_with_errors": 2591,
+      "first_error_position": {
+        "early_third": 1906,
+        "mid_third": 187,
+        "late_third": 498,
+        "early_pct": 73.6,
+        "mid_pct": 7.2,
+        "late_pct": 19.2
+      },
+      "error_types": {
+        "terminal_errors": 2454,
+        "terminal_pct": 94.7,
+        "cascade_errors": 2043,
+        "cascade_pct": 78.8,
+        "isolated_errors": 526,
+        "isolated_pct": 20.3
+      },
+      "error_density_by_position": {
+        "early": 0.6927,
+        "mid": 0.742,
+        "late": 0.8835,
+        "gradient": 0.1908,
+        "ratio_late_early": 1.28
+      },
+      "multi_error_patterns": {
+        "cascade_then_recover": 150,
+        "isolated_then_cascade": 0,
+        "pure_cascade": 1893,
+        "pure_isolated": 22
+      },
+      "density_test": {
+        "t_statistic": 24.998,
+        "p_value": 0.0,
+        "significant": true,
+        "direction": "late > early"
+      }
+    },
+    "gsm8k": {
+      "n_chains_with_errors": 1367,
+      "first_error_position": {
+        "early_third": 619,
+        "mid_third": 346,
+        "late_third": 402,
+        "early_pct": 45.3,
+        "mid_pct": 25.3,
+        "late_pct": 29.4
+      },
+      "error_types": {
+        "terminal_errors": 579,
+        "terminal_pct": 42.4,
+        "cascade_errors": 598,
+        "cascade_pct": 43.7,
+        "isolated_errors": 664,
+        "isolated_pct": 48.6
+      },
+      "error_density_by_position": {
+        "early": 0.2242,
+        "mid": 0.4038,
+        "late": 0.3482,
+        "gradient": 0.124,
+        "ratio_late_early": 1.55
+      },
+      "multi_error_patterns": {
+        "cascade_then_recover": 435,
+        "isolated_then_cascade": 0,
+        "pure_cascade": 163,
+        "pure_isolated": 105
+      },
+      "density_test": {
+        "t_statistic": 10.167,
+        "p_value": 0.0,
+        "significant": true,
+        "direction": "late > early"
+      }
+    },
+    "mathqa": {
+      "n_chains_with_errors": 4494,
+      "first_error_position": {
+        "early_third": 2482,
+        "mid_third": 1200,
+        "late_third": 812,
+        "early_pct": 55.2,
+        "mid_pct": 26.7,
+        "late_pct": 18.1
+      },
+      "error_types": {
+        "terminal_errors": 1768,
+        "terminal_pct": 39.3,
+        "cascade_errors": 2447,
+        "cascade_pct": 54.5,
+        "isolated_errors": 1180,
+        "isolated_pct": 26.3
+      },
+      "error_density_by_position": {
+        "early": 0.2385,
+        "mid": 0.435,
+        "late": 0.3514,
+        "gradient": 0.1129,
+        "ratio_late_early": 1.47
+      },
+      "multi_error_patterns": {
+        "cascade_then_recover": 1659,
+        "isolated_then_cascade": 0,
+        "pure_cascade": 788,
+        "pure_isolated": 867
+      },
+      "density_test": {
+        "t_statistic": 19.553,
+        "p_value": 0.0,
+        "significant": true,
+        "direction": "late > early"
+      }
+    },
+    "mmlu_pro": {
+      "n_chains_with_errors": 1798,
+      "first_error_position": {
+        "early_third": 1071,
+        "mid_third": 295,
+        "late_third": 432,
+        "early_pct": 59.6,
+        "mid_pct": 16.4,
+        "late_pct": 24.0
+      },
+      "error_types": {
+        "terminal_errors": 1200,
+        "terminal_pct": 66.7,
+        "cascade_errors": 1354,
+        "cascade_pct": 75.3,
+        "isolated_errors": 428,
+        "isolated_pct": 23.8
+      },
+      "error_density_by_position": {
+        "early": 0.4342,
+        "mid": 0.6846,
+        "late": 0.686,
+        "gradient": 0.2518,
+        "ratio_late_early": 1.58
+      },
+      "multi_error_patterns": {
+        "cascade_then_recover": 670,
+        "isolated_then_cascade": 0,
+        "pure_cascade": 684,
+        "pure_isolated": 16
+      },
+      "density_test": {
+        "t_statistic": 26.74,
+        "p_value": 0.0,
+        "significant": true,
+        "direction": "late > early"
+      }
+    },
+    "proofwriter": {
+      "n_chains_with_errors": 1613,
+      "first_error_position": {
+        "early_third": 155,
+        "mid_third": 28,
+        "late_third": 1430,
+        "early_pct": 9.6,
+        "mid_pct": 1.7,
+        "late_pct": 88.7
+      },
+      "error_types": {
+        "terminal_errors": 1533,
+        "terminal_pct": 95.0,
+        "cascade_errors": 159,
+        "cascade_pct": 9.9,
+        "isolated_errors": 1438,
+        "isolated_pct": 89.2
+      },
+      "error_density_by_position": {
+        "early": 0.0601,
+        "mid": 0.0905,
+        "late": 0.4424,
+        "gradient": 0.3824,
+        "ratio_late_early": 7.37
+      },
+      "multi_error_patterns": {
+        "cascade_then_recover": 112,
+        "isolated_then_cascade": 0,
+        "pure_cascade": 47,
+        "pure_isolated": 16
+      },
+      "density_test": {
+        "t_statistic": 44.544,
+        "p_value": 0.0,
+        "significant": true,
+        "direction": "late > early"
+      }
+    }
+  },
+  "fan_in_assessment": {
+    "bbh_tracking": {
+      "supports_fan_in": false,
+      "late_vs_early_first_error": "19.2% vs 73.6%",
+      "density_gradient": 0.1908,
+      "cascade_rate": 78.8,
+      "interpretation": "Does not support fan-in hypothesis: errors are not more concentrated at late positions (density gradient: 0.1908). Cascade rate: 78.8% \u2014 consistent with error propagation."
+    },
+    "gsm8k": {
+      "supports_fan_in": false,
+      "late_vs_early_first_error": "29.4% vs 45.3%",
+      "density_gradient": 0.124,
+      "cascade_rate": 43.7,
+      "interpretation": "Does not support fan-in hypothesis: errors are not more concentrated at late positions (density gradient: 0.1240). Cascade rate: 43.7% \u2014 consistent with error propagation."
+    },
+    "mathqa": {
+      "supports_fan_in": false,
+      "late_vs_early_first_error": "18.1% vs 55.2%",
+      "density_gradient": 0.1129,
+      "cascade_rate": 54.5,
+      "interpretation": "Does not support fan-in hypothesis: errors are not more concentrated at late positions (density gradient: 0.1129). Cascade rate: 54.5% \u2014 consistent with error propagation."
+    },
+    "mmlu_pro": {
+      "supports_fan_in": false,
+      "late_vs_early_first_error": "24.0% vs 59.6%",
+      "density_gradient": 0.2518,
+      "cascade_rate": 75.3,
+      "interpretation": "Does not support fan-in hypothesis: errors are not more concentrated at late positions (density gradient: 0.2518). Cascade rate: 75.3% \u2014 consistent with error propagation."
+    },
+    "proofwriter": {
+      "supports_fan_in": true,
+      "late_vs_early_first_error": "88.7% vs 9.6%",
+      "density_gradient": 0.3824,
+      "cascade_rate": 9.9,
+      "interpretation": "Supports fan-in hypothesis: errors are more concentrated at late positions (density gradient: 0.3824). Cascade rate: 9.9% \u2014 not consistent with error propagation."
+    }
+  }
+}
