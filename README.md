@@ -5,7 +5,7 @@ Raj Firke (Red Hat) · Rajeswari Kannan (Pimpri Chinchwad College of Engineering
 
 [EMNLP 2026](https://2026.emnlp.org/)
 
-Paper Link: [When does reasoning age?](When%20does%20reasoning%20age?.pdf)
+[📄 Paper](./When%20does%20reasoning%20age%3F.pdf)
 
 ## Overview
 
