@@ -1,6 +1,6 @@
 # When Does Reasoning Age? Survival Analysis of Step-Level Error Hazard in LLM Chains
 
-**EMNLP 2026 Main Conference**  
+**EMNLP 2026 Main Conference (Oral)**  
 Raj Firke (Red Hat) · Rajeswari Kannan (Pimpri Chinchwad College of Engineering)
 
 [EMNLP 2026](https://2026.emnlp.org/)
